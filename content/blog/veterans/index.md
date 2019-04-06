@@ -2,6 +2,7 @@
 authors:
 - admin
 date: "2018-11-30T00:00:00-04:00"
+reading_time: true
 draft: false
 image:
   focal_point: "Smart"
@@ -12,7 +13,6 @@ summary: Drawing insights on population through data visualization.
 title: 'Visualizing Veteran Population'
 categories: ["Data Visualization", "GIS", "Maps"]
 lastmod: ""
-reading_time: true
 ---
 
 The [US Department of Veterans Affairs](https://www.va.gov/) is a federal agency responsible for taking care of US military personnel after they separated from service. The VA provides healthcare, education, disability, and other benefits to US veterans. The [VA](https://www.va.gov/vetdata/veteran_population.asp) also has a lot of data on US veterans available for free. There's a bunch of spreadsheets and pivot tables on veteran population. The data is given in county format, which is good for our analysis later, but we need to aggregate the data to view it at a state level.
