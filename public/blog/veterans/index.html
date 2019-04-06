@@ -642,9 +642,50 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>I was curious to know what the veteran population was like in the United States, so I went onto the <a href="https://www.va.gov/vetdata/veteran_population.asp" target="_blank">Department of Veterans Affairs website</a> and found a bunch of spreadsheets and pivot tables on veteran population.</p>
+      
 
-<p><img src="./gallery/uspop.png" alt="png" /></p>
+<p>I was curious to know what the veteran population was like in the United States, so I went onto the <a href="https://www.va.gov/vetdata/veteran_population.asp" target="_blank">Department of Veterans Affairs website</a> and found a bunch of spreadsheets and pivot tables on veteran population. The data is given in county format, which is good for our analysis later, but we need to aggregate it to look at it in a state level.</p>
+
+<h2 id="b-us-veteran-population-density-in-2015-b"><b>US Veteran Population Density in 2015</b></h2>
+
+<p><img src="./gallery/uspop.png" alt="png" />
+Here is a breakdown of veteran popuulation density across the US in 2015. We can see that most veterans live in California, Texas, and Florida.</p>
+
+<p><br></p>
+
+<h2 id="b-new-york-veteran-population-density-in-2015-b"><b>New York Veteran Population Density in 2015</b></h2>
+
+<p><img src="./gallery/nypopraw.png" alt="png" />
+Now that we have an idea of the veteran population in the US, lets look more closely at a particular state to see if we can draw any insights on this dataset. The above map shows a raw count of veterans in New York. Suffolk county and Erie county have the most veterans. However, this map can be a little misleading. There are a lot of veterans living in these counties but we do not know anything about the overall population density in each county. Let&rsquo;s take some <a href="https://www.census.gov/programs-surveys/geography.html" target="_blank">census data</a> and build out veteran proportion in each country.</p>
+
+<p><br></p>
+
+<h2 id="b-new-york-veteran-population-by-percentage-b"><b>New York Veteran Population by percentage</b></h2>
+
+<p><img src="./gallery/nypopperc.png" alt="png" />
+Now we can see taht Jefferson and Hamilton county have the most veterans by percentage of population within the county. A little Google search found that a VA in both Hamilton County and Jefferson County!
+<br>
+<a href="https://veterans.ny.gov/content/hamilton-county-veterans-service-agency-location-1" target="_blank">VA in Hamilton County</a><br>
+<a href="https://co.jefferson.ny.us/departments/Veterans" target="_blank">VA in Jefferson County</a></p>
+
+<p><br></p>
+
+<h2 id="b-impotance-of-visualization-b"><b>Impotance of Visualization</b></h2>
+
+<p>Visualizing this dataset helped understand areas with the highest proportion of veterans does not happen by chance. More veterans will live nearby a VA.  I think this approach would be useful for the VA if they have plans to build new VA hospitals or offices that provide benefits to veterans.</p>
+
+<p><br></p>
+
+<h2 id="resources">Resources:</h2>
+
+<p><a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_state.html" target="_blank">https://www.census.gov/geo/maps-data/data/cbf/cbf_state.html</a><br />
+<a href="http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=927" target="_blank">http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=927</a><br />
+<a href="https://www.va.gov/vetdata/" target="_blank">https://www.va.gov/vetdata/</a></p>
+
+<h2 id="interesting-reading">Interesting Reading:</h2>
+
+<p><a href="https://www.osc.state.ny.us/reports/other/veterans_11_2015.pdf" target="_blank">https://www.osc.state.ny.us/reports/other/veterans_11_2015.pdf</a><br />
+<a href="https://www.syracuse.com/state/index.ssf/2015/11/nys_veterans_where_they_live_when_they_served.html" target="_blank">https://www.syracuse.com/state/index.ssf/2015/11/nys_veterans_where_they_live_when_they_served.html</a></p>
 
     </div>
 

@@ -105,9 +105,50 @@ rm Untitled.md
       <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
       
       <guid>/blog/veterans/</guid>
-      <description>&lt;p&gt;I was curious to know what the veteran population was like in the United States, so I went onto the &lt;a href=&#34;https://www.va.gov/vetdata/veteran_population.asp&#34; target=&#34;_blank&#34;&gt;Department of Veterans Affairs website&lt;/a&gt; and found a bunch of spreadsheets and pivot tables on veteran population.&lt;/p&gt;
+      <description>
 
-&lt;p&gt;&lt;img src=&#34;./gallery/uspop.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;I was curious to know what the veteran population was like in the United States, so I went onto the &lt;a href=&#34;https://www.va.gov/vetdata/veteran_population.asp&#34; target=&#34;_blank&#34;&gt;Department of Veterans Affairs website&lt;/a&gt; and found a bunch of spreadsheets and pivot tables on veteran population. The data is given in county format, which is good for our analysis later, but we need to aggregate it to look at it in a state level.&lt;/p&gt;
+
+&lt;h2 id=&#34;b-us-veteran-population-density-in-2015-b&#34;&gt;&lt;b&gt;US Veteran Population Density in 2015&lt;/b&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;./gallery/uspop.png&#34; alt=&#34;png&#34; /&gt;
+Here is a breakdown of veteran popuulation density across the US in 2015. We can see that most veterans live in California, Texas, and Florida.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;b-new-york-veteran-population-density-in-2015-b&#34;&gt;&lt;b&gt;New York Veteran Population Density in 2015&lt;/b&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;./gallery/nypopraw.png&#34; alt=&#34;png&#34; /&gt;
+Now that we have an idea of the veteran population in the US, lets look more closely at a particular state to see if we can draw any insights on this dataset. The above map shows a raw count of veterans in New York. Suffolk county and Erie county have the most veterans. However, this map can be a little misleading. There are a lot of veterans living in these counties but we do not know anything about the overall population density in each county. Let&amp;rsquo;s take some &lt;a href=&#34;https://www.census.gov/programs-surveys/geography.html&#34; target=&#34;_blank&#34;&gt;census data&lt;/a&gt; and build out veteran proportion in each country.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;b-new-york-veteran-population-by-percentage-b&#34;&gt;&lt;b&gt;New York Veteran Population by percentage&lt;/b&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;./gallery/nypopperc.png&#34; alt=&#34;png&#34; /&gt;
+Now we can see taht Jefferson and Hamilton county have the most veterans by percentage of population within the county. A little Google search found that a VA in both Hamilton County and Jefferson County!
+&lt;br&gt;
+&lt;a href=&#34;https://veterans.ny.gov/content/hamilton-county-veterans-service-agency-location-1&#34; target=&#34;_blank&#34;&gt;VA in Hamilton County&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://co.jefferson.ny.us/departments/Veterans&#34; target=&#34;_blank&#34;&gt;VA in Jefferson County&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;b-impotance-of-visualization-b&#34;&gt;&lt;b&gt;Impotance of Visualization&lt;/b&gt;&lt;/h2&gt;
+
+&lt;p&gt;Visualizing this dataset helped understand areas with the highest proportion of veterans does not happen by chance. More veterans will live nearby a VA.  I think this approach would be useful for the VA if they have plans to build new VA hospitals or offices that provide benefits to veterans.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;resources&#34;&gt;Resources:&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.census.gov/geo/maps-data/data/cbf/cbf_state.html&#34; target=&#34;_blank&#34;&gt;https://www.census.gov/geo/maps-data/data/cbf/cbf_state.html&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=927&#34; target=&#34;_blank&#34;&gt;http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=927&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.va.gov/vetdata/&#34; target=&#34;_blank&#34;&gt;https://www.va.gov/vetdata/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;interesting-reading&#34;&gt;Interesting Reading:&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.osc.state.ny.us/reports/other/veterans_11_2015.pdf&#34; target=&#34;_blank&#34;&gt;https://www.osc.state.ny.us/reports/other/veterans_11_2015.pdf&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.syracuse.com/state/index.ssf/2015/11/nys_veterans_where_they_live_when_they_served.html&#34; target=&#34;_blank&#34;&gt;https://www.syracuse.com/state/index.ssf/2015/11/nys_veterans_where_they_live_when_they_served.html&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
