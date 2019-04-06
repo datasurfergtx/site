@@ -32,7 +32,7 @@ social:
   link: https://github.com/datasurfergtx
 - icon: camera
   icon_pack: fas
-  link: https://unsplash.com/@jl_photos/collections
+  link: https://unsplash.com/@jl_photos
 - icon: 'cv'
   icon_pack: 'ai'
   link: https://jackylam.io/files/jackylam_resume.pdf
