@@ -7,21 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jacky Lam</copyright>
-    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Nov 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/blog/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/jupyter/</guid>
-      <description>from IPython.core.display import Image Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)  print(&amp;quot;Welcome to Academic!&amp;quot;)  Welcome to Academic!  Install Python and Jupyter Install Anaconda which includes Python 3 and Jupyter notebook.
-Otherwise, for advanced users, install Jupyter notebook with pip3 install jupyter.
-Create a new blog post as usual Run the following commands in your Terminal, substituting &amp;lt;MY_WEBSITE_FOLDER&amp;gt; and my-post with the file path to your Academic website folder and a name for your blog post (without spaces), respectively:</description>
-    </item>
     
     <item>
       <title>Visualizing Veteran Population</title>
@@ -29,19 +18,7 @@ Create a new blog post as usual Run the following commands in your Terminal, sub
       <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
       
       <guid>/blog/veterans/</guid>
-      <description>I was curious to know what the veteran population was like in the United States, so I went onto the Department of Veterans Affairs website and found a bunch of spreadsheets and pivot tables on veteran population. The data is given in county format, which is good for our analysis later, but we need to aggregate it to look at it in a state level.
-US Veteran Population Density in 2015 Here is a breakdown of veteran popuulation density across the US in 2015.</description>
-    </item>
-    
-    <item>
-      <title>Academic: the website designer for Hugo</title>
-      <link>/blog/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>/blog/getting-started/</guid>
-      <description>Academic makes it easy to create a beautiful website for free using Markdown. Customize anything on your site with widgets, themes, and language packs.
-Follow our easy step by step guide to learn how to build your own free website with Academic. Check out the personal demo or the business demo of what you&amp;rsquo;ll get in less than 10 minutes.
- View the documentation Ask a question Request a feature or report a bug Updating?</description>
+      <description>The US Department of Veterans Affairs is a federal agency responsible for taking care of US military personnel after they separated from service. The VA provides healthcare, education, disability, and other benefits to US veterans. The VA also has a lot of data on US veterans available for free. There&amp;rsquo;s a bunch of spreadsheets and pivot tables on veteran population. The data is given in county format, which is good for our analysis later, but we need to aggregate the data to view it at a state level.</description>
     </item>
     
   </channel>

@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: Jacky Lam is a self taught data scientist who's research includes big data analysis on NYC's vast transportation networks.
+bio: Jacky Lam is a self-taught data scientist whose research includes big data analysis on NYC's vast transportation networks.
 education:
   courses:
   - course: Bachelor of Business Administration
