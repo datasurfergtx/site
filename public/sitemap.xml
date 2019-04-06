@@ -9,8 +9,14 @@
   
     <url>
     
+      <loc>/blog/jupyter/</loc>
+      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+    
       <loc>/blog/veterans/</loc>
-      <lastmod>2018-11-30T00:00:00+00:00</lastmod>
+      <lastmod>2018-11-30T00:00:00-04:00</lastmod>
     </url>
   
     <url>
@@ -41,6 +47,12 @@
     
       <loc>/project/internal-project/</loc>
       <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/blog/getting-started/</loc>
+      <lastmod>2018-01-13T00:00:00-05:00</lastmod>
     </url>
   
     <url>
@@ -77,7 +89,7 @@
     <url>
     
       <loc>/tags/academic/</loc>
-      <lastmod>2018-11-30T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-13T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -96,6 +108,13 @@
     <url>
     
       <loc>/categories/</loc>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/categories/data-visualization/</loc>
+      <lastmod>2018-11-30T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -122,6 +141,13 @@
   
     <url>
     
+      <loc>/categories/gis/</loc>
+      <lastmod>2018-11-30T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>/</loc>
       <lastmod>2030-06-01T13:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -131,6 +157,13 @@
     
       <loc>/authors/ms-nixon/</loc>
       <lastmod>2013-07-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/categories/maps/</loc>
+      <lastmod>2018-11-30T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -174,21 +207,21 @@
     <url>
     
       <loc>/tags/</loc>
-      <lastmod>2018-11-30T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-13T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>/authors/admin/</loc>
-      <lastmod>2018-11-30T00:00:00+00:00</lastmod>
+      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>/blog/</loc>
-      <lastmod>2018-11-30T00:00:00+00:00</lastmod>
+      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     </url>
   
 </urlset>

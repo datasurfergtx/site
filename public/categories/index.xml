@@ -11,5 +11,32 @@
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Data Visualization</title>
+      <link>/categories/data-visualization/</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/categories/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIS</title>
+      <link>/categories/gis/</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/categories/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maps</title>
+      <link>/categories/maps/</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/categories/maps/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
