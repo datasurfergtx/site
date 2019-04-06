@@ -2,21 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>admin on Jacky Lam</title>
-    <link>https://jackylam.io/authors/admin/</link>
+    <link>/authors/admin/</link>
     <description>Recent content in admin on Jacky Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jacky Lam</copyright>
+    <lastBuildDate>Fri, 30 Nov 2018 00:00:00 -0400</lastBuildDate>
     
-	<atom:link href="https://jackylam.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Academic: the website designer for Hugo</title>
+      <link>/blog/veterans/</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/blog/veterans/</guid>
+      <description>Academic makes it easy to create a beautiful website for free using Markdown. Customize anything on your site with widgets, themes, and language packs.
+Follow our easy step by step guide to learn how to build your own free website with Academic. Check out the personal demo or the business demo of what you&amp;rsquo;ll get in less than 10 minutes.
+ View the documentation Ask a question Request a feature or report a bug Updating?</description>
+    </item>
+    
+    <item>
       <title></title>
-      <link>https://jackylam.io/author/admin/</link>
+      <link>/author/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jackylam.io/author/admin/</guid>
+      <guid>/author/admin/</guid>
       <description>Hi there! I’m Jacky, a data-loving transportation policy analyst. My passion for data began in 2016 while working for the NYC Taxi &amp;amp; Limousine Commission. For the past three years, I worked on researching and implementing policies that affect the lives of over 8 million New Yorkers with a data-driven approach. I created this site to be the home for my work and personal projects.
 I studied Business Administration at Queens College and enlisted in the military after finishing my undergraduate degree.</description>
     </item>
