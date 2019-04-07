@@ -2,7 +2,6 @@
 authors:
 - admin
 date: "2018-11-30T00:00:00-04:00"
-reading_time: true
 draft: false
 image:
   focal_point: "Smart"
