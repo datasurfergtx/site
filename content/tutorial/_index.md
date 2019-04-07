@@ -12,4 +12,10 @@ type: docs
 
 ![jpg](./data.jpg)
 
-Welcome to the tutorials section! Here you can find tutorials on things that I think are useful to know in your data science toolbelt. The tutorials are meant to be quick, easy and reproducible for your own data analysis.
+Welcome to the tutorials section! Here you can find tutorials on things that I have found useful to know in your data science toolbelt. The tutorials are meant to be quick, easy and reproducible for your own data analysis.
+
+## <b>Recent Tutorials</b>
+- [Exploratory Analysis on Uber Data](https://jackylam.io/tutorial/uber-data/)
+
+## <b>Blog Posts</b>
+- [Visualizing Veteran Population](https://jackylam.io/blog/veterans/)

@@ -37,9 +37,6 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
 
 ## <b>Importance of Visualization</b>
 Visualizing this dataset helped us understand that areas with the highest proportion of veterans do not happen by chance. More veterans will live nearby a VA.  I think this approach would be useful for the VA if they have plans to build new VA hospitals or offices that provide benefits to veterans.
-
 <br>
-### Resources:  
-https://www.census.gov/geo/maps-data/data/cbf/cbf_state.html  
-http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=927  
-https://www.va.gov/vetdata/
+## <b>Tutorials:</b>
+- [Explorartory Analysis on Uber Data](https://jackylam.io/tutorial/uber-data/)

@@ -81,15 +81,14 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
 
 &lt;h2 id=&#34;b-importance-of-visualization-b&#34;&gt;&lt;b&gt;Importance of Visualization&lt;/b&gt;&lt;/h2&gt;
 
-&lt;p&gt;Visualizing this dataset helped us understand that areas with the highest proportion of veterans do not happen by chance. More veterans will live nearby a VA.  I think this approach would be useful for the VA if they have plans to build new VA hospitals or offices that provide benefits to veterans.&lt;/p&gt;
+&lt;p&gt;Visualizing this dataset helped us understand that areas with the highest proportion of veterans do not happen by chance. More veterans will live nearby a VA.  I think this approach would be useful for the VA if they have plans to build new VA hospitals or offices that provide benefits to veterans.
+&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;b-tutorials-b&#34;&gt;&lt;b&gt;Tutorials:&lt;/b&gt;&lt;/h2&gt;
 
-&lt;h3 id=&#34;resources&#34;&gt;Resources:&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.census.gov/geo/maps-data/data/cbf/cbf_state.html&#34; target=&#34;_blank&#34;&gt;https://www.census.gov/geo/maps-data/data/cbf/cbf_state.html&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=927&#34; target=&#34;_blank&#34;&gt;http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=927&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://www.va.gov/vetdata/&#34; target=&#34;_blank&#34;&gt;https://www.va.gov/vetdata/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jackylam.io/tutorial/uber-data/&#34; target=&#34;_blank&#34;&gt;Explorartory Analysis on Uber Data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
