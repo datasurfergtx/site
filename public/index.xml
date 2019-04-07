@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jacky Lam on Jacky Lam</title>
-    <link>https://jackylam.io/</link>
+    <link>/</link>
     <description>Recent content in Jacky Lam on Jacky Lam</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Example Talk</title>
-      <link>https://jackylam.io/talk/example/</link>
+      <link>/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 -0400</pubDate>
       
-      <guid>https://jackylam.io/talk/example/</guid>
+      <guid>/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
@@ -37,11 +37,20 @@
     </item>
     
     <item>
+      <title>Predicting Taxi Fares in NYC</title>
+      <link>/blog/taxi-fare/</link>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/blog/taxi-fare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Visualizing Veteran Population</title>
-      <link>https://jackylam.io/blog/veterans/</link>
+      <link>/blog/veterans/</link>
       <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
       
-      <guid>https://jackylam.io/blog/veterans/</guid>
+      <guid>/blog/veterans/</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;https://www.va.gov/&#34; target=&#34;_blank&#34;&gt;US Department of Veterans Affairs&lt;/a&gt; is a federal agency responsible for taking care of US military personnel after they separated from service. The VA provides healthcare, education, disability, and other benefits to US veterans. The &lt;a href=&#34;https://www.va.gov/vetdata/veteran_population.asp&#34; target=&#34;_blank&#34;&gt;VA&lt;/a&gt; also has a lot of data on US veterans available for free. There&amp;rsquo;s a bunch of spreadsheets and pivot tables on veteran population. The data is given in county format, which is good for our analysis later, but we need to aggregate the data to view it at a state level.&lt;/p&gt;
@@ -85,20 +94,108 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
     </item>
     
     <item>
+      <title>Visualizing Taxi Relief Stands in NYC</title>
+      <link>/blog/taxi-relief/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/blog/taxi-relief/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Example Page</title>
+      <link>/tutorial/quickstart-to-r/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/tutorial/quickstart-to-r/</guid>
+      <description>&lt;p&gt;library(tidyverse)
+library(data.table)
+options(scipen =999)
+setwd(&amp;ldquo;C:/Users/lamja/Documents/R/uber-pickups-in-new-york-city&amp;rdquo;)&lt;/p&gt;
+
+&lt;p&gt;uber = read.csv(&amp;ldquo;uber-raw-data-sep14.csv&amp;rdquo;)
+str(uber)
+sum(is.na(uber))
+#Date.Time is not in a readable time format for r. Let&amp;rsquo;s convert it.&lt;/p&gt;
+
+&lt;p&gt;#I like to use datetime as 2/20/2019 8:15:55PM but my friend from Latvia uses datetime in 20-02-2019 20:15:55, which one is correct?&lt;/p&gt;
+
+&lt;p&gt;#r says neither!&lt;/p&gt;
+
+&lt;p&gt;#what is the ISO 8601 standard?
+#&lt;a href=&#34;https://en.wikipedia.org/wiki/ISO_8601&#34; target=&#34;_blank&#34;&gt;https://en.wikipedia.org/wiki/ISO_8601&lt;/a&gt;
+#R likes to use POSIXct when working with dates. This follows the ISO 8601 standard.&lt;/p&gt;
+
+&lt;p&gt;#NEVER convert factors directly into time. Convert it to a character first.
+uber$Date.Time = as.character(uber$Date.Time)
+str(uber)
+#we need to use strptime
+#&lt;a href=&#34;https://stat.ethz.ch/R-manual/R-devel/library/base/html/strptime.html&#34; target=&#34;_blank&#34;&gt;https://stat.ethz.ch/R-manual/R-devel/library/base/html/strptime.html&lt;/a&gt;
+uber$Date.Time = strptime(uber$Date.Time, &amp;ldquo;%m/%d/%Y %H:%M:%S&amp;rdquo;) #fast
+parse_date_time(uber$Date.Time, order = &amp;lsquo;mdy HMS&amp;rsquo;) #slow but forgiving
+uber$Date.Time = as.POSIXct(uber$Date.Time) #fastest! But data needs to be in the format already or it won&amp;rsquo;t work.&lt;/p&gt;
+
+&lt;p&gt;#lets play around with the data!&lt;/p&gt;
+
+&lt;p&gt;trip_times = as.data.frame(table(uber$Date.Time, uber$Base))
+#so this aggregation sucks.&lt;/p&gt;
+
+&lt;p&gt;#let&amp;rsquo;s see what the trip volume is per day.&lt;/p&gt;
+
+&lt;p&gt;uber1 = uber
+uber1$Date.Time = substr(uber1$Date.Time, 1,10)
+str(uber1)
+#it&amp;rsquo;s a character again.
+uber1$Date.Time = strptime(uber1$Date.Time, &amp;ldquo;%Y-%m-%d&amp;rdquo;)
+uber1$Date.Time = as.POSIXct(uber1$Date.Time)
+trip_times = as.data.frame(table(uber1$Date.Time,uber1$Base))
+table(uber1$Base)&lt;/p&gt;
+
+&lt;p&gt;#notice that the bases are in one column, let&amp;rsquo;s reshape this to make it look cleaner
+#&lt;a href=&#34;https://www.rstudio.com/resources/cheatsheets/&#34; target=&#34;_blank&#34;&gt;https://www.rstudio.com/resources/cheatsheets/&lt;/a&gt;
+trip_times = spread(trip_times, Var2, Freq)&lt;/p&gt;
+
+&lt;p&gt;#nice! Let&amp;rsquo;s rename the column, Var1 is not that descriptive, anyway.
+colnames(trip_times)[1] &amp;lt;- &amp;ldquo;Date&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;names(trip_times)
+graph = gather(trip_times, &amp;lsquo;B02512&amp;rsquo;,&amp;lsquo;B02598&amp;rsquo;, &amp;lsquo;B02682&amp;rsquo;, &amp;lsquo;B02764&amp;rsquo;, &amp;lsquo;B02617&amp;rsquo;, key = &amp;ldquo;Base&amp;rdquo;, value = &amp;ldquo;Trips&amp;rdquo;)
+head(graph)
+#let&amp;rsquo;s make sure we have proper datetimes
+str(graph)
+#we don&amp;rsquo;t! Let&amp;rsquo;s convert this quickly.
+graph$Date = as.POSIXct(as.character(graph$Date))
+str(graph)&lt;/p&gt;
+
+&lt;p&gt;ggplot(graph, aes(x = Date, y = Trips, color = as.factor(Base))) + geom_line()&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>External Project</title>
-      <link>https://jackylam.io/project/external-project/</link>
+      <link>/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://jackylam.io/project/external-project/</guid>
+      <guid>/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internal Project</title>
-      <link>https://jackylam.io/project/internal-project/</link>
+      <link>/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://jackylam.io/project/internal-project/</guid>
+      <guid>/project/internal-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
@@ -113,30 +210,30 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
     
     <item>
       <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>https://jackylam.io/publication/person-re-id/</link>
+      <link>/publication/person-re-id/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 -0400</pubDate>
       
-      <guid>https://jackylam.io/publication/person-re-id/</guid>
+      <guid>/publication/person-re-id/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Mobile visual clothing search</title>
-      <link>https://jackylam.io/publication/clothing-search/</link>
+      <link>/publication/clothing-search/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 -0400</pubDate>
       
-      <guid>https://jackylam.io/publication/clothing-search/</guid>
+      <guid>/publication/clothing-search/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>https://jackylam.io/slides/example-slides/</link>
+      <link>/slides/example-slides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jackylam.io/slides/example-slides/</guid>
+      <guid>/slides/example-slides/</guid>
       <description>
 
 &lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
