@@ -103,53 +103,36 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
     </item>
     
     <item>
-      <title>Example Page</title>
-      <link>/tutorial/quickstart-to-r/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      <title>Explorartory Analysis on Uber Data</title>
+      <link>/tutorial/uber-data/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 -0400</pubDate>
       
-      <guid>/tutorial/quickstart-to-r/</guid>
+      <guid>/tutorial/uber-data/</guid>
       <description>
 
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
-library(data.table)
-options(scipen =999)
-setwd(&amp;quot;/Users/Jacky/Downloads/uber-pickups-in-new-york-city&amp;quot;)
-# Download link: https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city/data
+&lt;p&gt;In this tutorial we&amp;rsquo;re going to:&lt;/p&gt;
 
-uber = read.csv(&amp;quot;uber-raw-data-sep14.csv&amp;quot;)
-str(uber)
-sum(is.na(uber))
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#import-data&#34;&gt;Import Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#clean-datetime&#34;&gt;Clean Datetime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#aggregate-data&#34;&gt;Aggregate Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#graph&#34;&gt;Graph&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;import-data&#34;&gt;Import Data&lt;/h2&gt;
+
+&lt;p&gt;The dataset we will be working on today will be uber&amp;rsquo;s NYC September 2014 dataset. You can find the dataset and a bunch more on Kaggle or click &lt;a href=&#34;https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city/data&#34; target=&#34;_blank&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have your data, import it, look at the data structure.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str(uber)
+ $ Date.Time: Factor w/ 42907 levels &amp;quot;9/1/2014 0:00:00&amp;quot;,..: 2 2 4 7 12 13 16 17 33 34 ...
+ $ Lat      : num  40.2 40.8 40.8 40.7 40.8 ...
+ $ Lon      : num  -74 -74 -74 -74 -73.9 ...
+ $ Base     : Factor w/ 5 levels &amp;quot;B02512&amp;quot;,&amp;quot;B02598&amp;quot;,..: 1 1 1 1 1 1 1 1 1 1 ...
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Tables&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Are&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;Cool&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;col 3 is&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;right-aligned&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;$1600&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;col 2 is&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;centered&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;$12&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;zebra stripes&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;are neat&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;$1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Notice that the datetime is a factor and it does not follow the &lt;a href=&#34;https://en.wikipedia.org/wiki/ISO_8601&#34; target=&#34;_blank&#34;&gt;ISO 8601&lt;/a&gt; standard. R likes reading datetimes in this format. The data structure in R is called POSIXct or POSIXlt. We don&amp;rsquo;t need to get into the details of it but just know that when you run an &lt;code&gt;str()&lt;/code&gt; POSIXct or POSIXlt is preferable. You will run into a bunch of problems if it is otherwise.&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -206,68 +189,298 @@ sum(is.na(uber))
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;datetime&#34;&gt;Datetime&lt;/h2&gt;
+&lt;h2 id=&#34;clean-datetime&#34;&gt;Clean Datetime&lt;/h2&gt;
 
-&lt;p&gt;library(tidyverse)
-library(data.table)
-options(scipen =999)
-setwd(&amp;ldquo;C:/Users/lamja/Documents/R/uber-pickups-in-new-york-city&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a bunch of different ways to clean up datatimes but the method is more or less the same:&lt;/p&gt;
 
-&lt;p&gt;uber = read.csv(&amp;ldquo;uber-raw-data-sep14.csv&amp;rdquo;)
-str(uber)
-sum(is.na(uber))
-#Date.Time is not in a readable time format for r. Let&amp;rsquo;s convert it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Convert factor to character&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;#I like to use datetime as 2/20/2019 8:15:55PM but my friend from Latvia uses datetime in 20-02-2019 20:15:55, which one is correct?&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;uber$Date.Time = as.character(uber$Date.Time)
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;#r says neither!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a datetime function to convert from chr to POSIXct/POSIXlt&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;#what is the ISO 8601 standard?
-#&lt;a href=&#34;https://en.wikipedia.org/wiki/ISO_8601&#34; target=&#34;_blank&#34;&gt;https://en.wikipedia.org/wiki/ISO_8601&lt;/a&gt;
-#R likes to use POSIXct when working with dates. This follows the ISO 8601 standard.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;uber$Date.Time = strptime(uber$Date.Time, &amp;quot;%m/%d/%Y %H:%M:%S&amp;quot;) #base r
+parse_date_time(uber$Date.Time, order = &#39;mdy HMS&#39;) #readr package
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;#NEVER convert factors directly into time. Convert it to a character first.
-uber$Date.Time = as.character(uber$Date.Time)
-str(uber)
-#we need to use strptime
-#&lt;a href=&#34;https://stat.ethz.ch/R-manual/R-devel/library/base/html/strptime.html&#34; target=&#34;_blank&#34;&gt;https://stat.ethz.ch/R-manual/R-devel/library/base/html/strptime.html&lt;/a&gt;
-uber$Date.Time = strptime(uber$Date.Time, &amp;ldquo;%m/%d/%Y %H:%M:%S&amp;rdquo;) #fast
-parse_date_time(uber$Date.Time, order = &amp;lsquo;mdy HMS&amp;rsquo;) #slow but forgiving
-uber$Date.Time = as.POSIXct(uber$Date.Time) #fastest! But data needs to be in the format already or it won&amp;rsquo;t work.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;strptime()&lt;/code&gt; is very fast but is not flexible with weird date formats. It will work fine for this dataset. Below is a chart of datetime formats you will encounter and how you should specify your datetime when you convert it in &lt;code&gt;strptime()&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;lets-play-around-with-the-data&#34;&gt;lets play around with the data!&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;R Format&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;th&gt;R Format&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
 
-&lt;p&gt;trip_times = as.data.frame(table(uber$Date.Time, uber$Base))
-#so this aggregation sucks.&lt;/p&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;%a&lt;/td&gt;
+&lt;td&gt;Abbreviated weekday&lt;/td&gt;
+&lt;td&gt;%A&lt;/td&gt;
+&lt;td&gt;Full weekday&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;#let&amp;rsquo;s see what the trip volume is per day.&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;%b&lt;/td&gt;
+&lt;td&gt;Abbreviated month&lt;/td&gt;
+&lt;td&gt;%B&lt;/td&gt;
+&lt;td&gt;Full month&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;uber1 = uber
-uber1$Date.Time = substr(uber1$Date.Time, 1,10)
-str(uber1)
-#it&amp;rsquo;s a character again.
-uber1$Date.Time = strptime(uber1$Date.Time, &amp;ldquo;%Y-%m-%d&amp;rdquo;)
-uber1$Date.Time = as.POSIXct(uber1$Date.Time)
-trip_times = as.data.frame(table(uber1$Date.Time,uber1$Base))
-table(uber1$Base)&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;%c&lt;/td&gt;
+&lt;td&gt;Locale-specific date and time&lt;/td&gt;
+&lt;td&gt;%d&lt;/td&gt;
+&lt;td&gt;Decimal date&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;#notice that the bases are in one column, let&amp;rsquo;s reshape this to make it look cleaner
-#&lt;a href=&#34;https://www.rstudio.com/resources/cheatsheets/&#34; target=&#34;_blank&#34;&gt;https://www.rstudio.com/resources/cheatsheets/&lt;/a&gt;
-trip_times = spread(trip_times, Var2, Freq)&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;%H&lt;/td&gt;
+&lt;td&gt;Decimal hours (24 hour)&lt;/td&gt;
+&lt;td&gt;%I&lt;/td&gt;
+&lt;td&gt;Decimal hours (12 hour)&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;#nice! Let&amp;rsquo;s rename the column, Var1 is not that descriptive, anyway.
-colnames(trip_times)[1] &amp;lt;- &amp;ldquo;Date&amp;rdquo;&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;%j&lt;/td&gt;
+&lt;td&gt;Decimal day of the year&lt;/td&gt;
+&lt;td&gt;%m&lt;/td&gt;
+&lt;td&gt;Decimal month&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;names(trip_times)
-graph = gather(trip_times, &amp;lsquo;B02512&amp;rsquo;,&amp;lsquo;B02598&amp;rsquo;, &amp;lsquo;B02682&amp;rsquo;, &amp;lsquo;B02764&amp;rsquo;, &amp;lsquo;B02617&amp;rsquo;, key = &amp;ldquo;Base&amp;rdquo;, value = &amp;ldquo;Trips&amp;rdquo;)
-head(graph)
-#let&amp;rsquo;s make sure we have proper datetimes
-str(graph)
-#we don&amp;rsquo;t! Let&amp;rsquo;s convert this quickly.
-graph$Date = as.POSIXct(as.character(graph$Date))
-str(graph)&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;%M&lt;/td&gt;
+&lt;td&gt;Decimal minute&lt;/td&gt;
+&lt;td&gt;%p&lt;/td&gt;
+&lt;td&gt;Locale-specific AM/PM&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;ggplot(graph, aes(x = Date, y = Trips, color = as.factor(Base))) + geom_line()&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;%S&lt;/td&gt;
+&lt;td&gt;Decimal second&lt;/td&gt;
+&lt;td&gt;%U&lt;/td&gt;
+&lt;td&gt;Decimal week of the year (starting on Sunday)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%w&lt;/td&gt;
+&lt;td&gt;Decimal Weekday (0=Sunday)&lt;/td&gt;
+&lt;td&gt;%W&lt;/td&gt;
+&lt;td&gt;Decimal week of the year (starting on Monday)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%x&lt;/td&gt;
+&lt;td&gt;Locale-specific Date&lt;/td&gt;
+&lt;td&gt;%X&lt;/td&gt;
+&lt;td&gt;Locale-specific Time&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%y&lt;/td&gt;
+&lt;td&gt;2-digit year&lt;/td&gt;
+&lt;td&gt;%Y&lt;/td&gt;
+&lt;td&gt;4-digit year&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%z&lt;/td&gt;
+&lt;td&gt;Offset from GMT&lt;/td&gt;
+&lt;td&gt;%Z&lt;/td&gt;
+&lt;td&gt;Time zone (character)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;code&gt;parse_date_time&lt;/code&gt; is more forgiving. It accepts a wider range of datetime formats and you will not need to use the chart above to specify your datetimes. However, this makes the function a lot slower to work with. If your datetime follows some kind of uniform pattern, &lt;code&gt;strptime()&lt;/code&gt; will work just fine.&lt;/p&gt;
+
+&lt;h2 id=&#34;aggregate-data&#34;&gt;Aggregate Data&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s look at trip volume per day by base.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Extract date from datetime:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;uber$date = substr(uber$Date.Time, 1,10)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;date is now a &lt;code&gt;chr&lt;/code&gt;, convert it to &lt;code&gt;POSIXlt&lt;/code&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;uber$date = strptime(uber$date, &amp;quot;%Y-%m-%d&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Aggregate the data:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;table(uber$date,uber$Base)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;B02512&lt;/th&gt;
+&lt;th&gt;B02598&lt;/th&gt;
+&lt;th&gt;B02617&lt;/th&gt;
+&lt;th&gt;B02682&lt;/th&gt;
+&lt;th&gt;B02764&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2014-09-01&lt;/td&gt;
+&lt;td&gt;638&lt;/td&gt;
+&lt;td&gt;4626&lt;/td&gt;
+&lt;td&gt;7940&lt;/td&gt;
+&lt;td&gt;3677&lt;/td&gt;
+&lt;td&gt;3080&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-02&lt;/td&gt;
+&lt;td&gt;1188&lt;/td&gt;
+&lt;td&gt;6970&lt;/td&gt;
+&lt;td&gt;11642&lt;/td&gt;
+&lt;td&gt;5729&lt;/td&gt;
+&lt;td&gt;3302&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-03&lt;/td&gt;
+&lt;td&gt;1284&lt;/td&gt;
+&lt;td&gt;8079&lt;/td&gt;
+&lt;td&gt;13019&lt;/td&gt;
+&lt;td&gt;6462&lt;/td&gt;
+&lt;td&gt;3787&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-04&lt;/td&gt;
+&lt;td&gt;1513&lt;/td&gt;
+&lt;td&gt;9412&lt;/td&gt;
+&lt;td&gt;15185&lt;/td&gt;
+&lt;td&gt;7670&lt;/td&gt;
+&lt;td&gt;4580&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-05&lt;/td&gt;
+&lt;td&gt;1808&lt;/td&gt;
+&lt;td&gt;10036&lt;/td&gt;
+&lt;td&gt;16472&lt;/td&gt;
+&lt;td&gt;8660&lt;/td&gt;
+&lt;td&gt;5343&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-06&lt;/td&gt;
+&lt;td&gt;1580&lt;/td&gt;
+&lt;td&gt;9848&lt;/td&gt;
+&lt;td&gt;15573&lt;/td&gt;
+&lt;td&gt;8132&lt;/td&gt;
+&lt;td&gt;5387&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-07&lt;/td&gt;
+&lt;td&gt;1124&lt;/td&gt;
+&lt;td&gt;7122&lt;/td&gt;
+&lt;td&gt;11639&lt;/td&gt;
+&lt;td&gt;5983&lt;/td&gt;
+&lt;td&gt;4266&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;We might want this to be in a data frame, so we can play around with it.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;trips = data.frame(table(uber$date,uber$Base))&lt;/code&gt;
+-Notice that our data is saved in a long format and not as the nice chart above.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;trips = spread(trips,Var2,Freq)&lt;/code&gt; we&amp;rsquo;ll worry about the column names later.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now our data frame should look something like the chart above but the date is named Var1. &lt;br&gt;
+&lt;code&gt;colnames(trips[1]) &amp;lt;- &amp;quot;date&amp;quot;&lt;/code&gt; That should fix it!&lt;/p&gt;
+
+&lt;h2 id=&#34;graph&#34;&gt;Graph&lt;/h2&gt;
+
+&lt;p&gt;Now it&amp;rsquo;s time to graph. You want your data in a long format like what &lt;code&gt;trips = data.frame(table(uber$date,uber$Base))&lt;/code&gt; gave you. You can just re-run this code or you can use &lt;code&gt;gather()&lt;/code&gt; function to bring our data frame back to it&amp;rsquo;s original state. &lt;br&gt;
+&lt;code&gt;graph = gather(trips,&#39;B02512&#39;,&#39;B02598&#39;, &#39;B02682&#39;, &#39;B02764&#39;, &#39;B02617&#39;, key = &amp;quot;Base&amp;quot;, value = &amp;quot;Trips&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;date&lt;/th&gt;
+&lt;th&gt;Base&lt;/th&gt;
+&lt;th&gt;Trips&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2014-09-01&lt;/td&gt;
+&lt;td&gt;B02512&lt;/td&gt;
+&lt;td&gt;638&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-02&lt;/td&gt;
+&lt;td&gt;B02512&lt;/td&gt;
+&lt;td&gt;1188&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-03&lt;/td&gt;
+&lt;td&gt;B02512&lt;/td&gt;
+&lt;td&gt;1284&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-04&lt;/td&gt;
+&lt;td&gt;B02512&lt;/td&gt;
+&lt;td&gt;1513&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-05&lt;/td&gt;
+&lt;td&gt;B02512&lt;/td&gt;
+&lt;td&gt;1808&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-09-06&lt;/td&gt;
+&lt;td&gt;B02512&lt;/td&gt;
+&lt;td&gt;1580&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;It looks like our dates are back into factors. No worries, since we&amp;rsquo;re already in the ISO 8601 format, converting is a breeze. &lt;br&gt;
+&lt;code&gt;graph$date = as.POSIXct(as.character(graph$date))&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;After all our hard work, we can finally graph our data!
+&lt;code&gt;ggplot(graph, aes(x = Date, y = Trips, color = as.factor(Base))) + geom_line()&lt;/code&gt;
+&lt;img src=&#34;/tutorial/uber-graph.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

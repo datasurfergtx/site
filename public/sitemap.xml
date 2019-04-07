@@ -9,6 +9,12 @@
   
     <url>
     
+      <loc>/tutorial/</loc>
+      <lastmod>2019-04-07T00:00:00-04:00</lastmod>
+    </url>
+  
+    <url>
+    
       <loc>/blog/taxi-fare/</loc>
       <lastmod>2019-04-06T00:00:00-04:00</lastmod>
     </url>
@@ -27,14 +33,8 @@
   
     <url>
     
-      <loc>/tutorial/</loc>
-      <lastmod>2018-09-09T00:00:00-04:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>/tutorial/quickstart-to-r/</loc>
-      <lastmod>2018-09-09T00:00:00-04:00</lastmod>
+      <loc>/tutorial/uber-data/</loc>
+      <lastmod>2018-09-10T00:00:00-04:00</lastmod>
     </url>
   
     <url>
