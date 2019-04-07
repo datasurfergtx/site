@@ -27,13 +27,19 @@
   
     <url>
     
-      <loc>/tutorial/quickstart-to-r/</loc>
+      <loc>/tutorial/example/</loc>
       <lastmod>2018-09-09T00:00:00-04:00</lastmod>
     </url>
   
     <url>
     
       <loc>/tutorial/</loc>
+      <lastmod>2018-09-09T00:00:00-04:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/tutorial/quickstart-to-r/</loc>
       <lastmod>2018-09-09T00:00:00-04:00</lastmod>
     </url>
   

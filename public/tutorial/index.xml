@@ -14,15 +14,22 @@
     
     <item>
       <title>Example Page</title>
+      <link>/tutorial/example/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>/tutorial/example/</guid>
+      <description>In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:
+Tip 1 &amp;hellip;
+Tip 2 &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Example Page</title>
       <link>/tutorial/quickstart-to-r/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
       
       <guid>/tutorial/quickstart-to-r/</guid>
-      <description>library(tidyverse) library(data.table) options(scipen =999) setwd(&amp;ldquo;C:/Users/lamja/Documents/R/uber-pickups-in-new-york-city&amp;rdquo;)
-uber = read.csv(&amp;ldquo;uber-raw-data-sep14.csv&amp;rdquo;) str(uber) sum(is.na(uber)) #Date.Time is not in a readable time format for r. Let&amp;rsquo;s convert it.
-#I like to use datetime as 2/20/2019 8:15:55PM but my friend from Latvia uses datetime in 20-02-2019 20:15:55, which one is correct?
-#r says neither!
-#what is the ISO 8601 standard? #https://en.wikipedia.org/wiki/ISO_8601 #R likes to use POSIXct when working with dates. This follows the ISO 8601 standard.</description>
+      <description>library(tidyverse) library(data.table) options(scipen =999) setwd(&amp;quot;/Users/Jacky/Downloads/uber-pickups-in-new-york-city&amp;quot;) # Download link: https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city/data uber = read.csv(&amp;quot;uber-raw-data-sep14.csv&amp;quot;) str(uber) sum(is.na(uber))     Tables Are Cool     col 3 is right-aligned $1600   col 2 is centered $12   zebra stripes are neat $1       Date.Time Lat Lon Base     9/1/2014 0:01:00 40.2201 -74.0021 B02512   9/1/2014 0:01:00 40.7500 -74.0027 B02512   9/1/2014 0:03:00 40.</description>
     </item>
     
   </channel>

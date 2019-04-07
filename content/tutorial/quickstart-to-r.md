@@ -1,15 +1,47 @@
 ---
 date: "2018-09-09T00:00:00-04:00"
 draft: true
-linktitle: Example Page
+linktitle: Quick Start to Data Analysis in Transportation
 menu:
   tutorial:
-    parent: Example Topic
+    parent: Transportation
     weight: 1
 title: Example Page
 toc: true
 type: docs
 ---
+
+```r
+library(tidyverse)
+library(data.table)
+options(scipen =999)
+setwd("/Users/Jacky/Downloads/uber-pickups-in-new-york-city")
+# Download link: https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city/data
+
+uber = read.csv("uber-raw-data-sep14.csv")
+str(uber)
+sum(is.na(uber))
+```
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+|Date.Time        |Lat     |Lon      |Base   |
+|-----------------|--------|---------|-------|
+| 9/1/2014 0:01:00| 40.2201| -74.0021| B02512|
+| 9/1/2014 0:01:00| 40.7500| -74.0027| B02512|
+| 9/1/2014 0:03:00| 40.7559| -73.9864| B02512|
+| 9/1/2014 0:06:00| 40.7450| -73.9889| B02512|
+| 9/1/2014 0:11:00| 40.8145| -73.9444| B02512|
+| 9/1/2014 0:12:00| 40.6735| -73.9918| B02512|
+
+
+## Datetime
+
 library(tidyverse)
 library(data.table)
 options(scipen =999)
@@ -39,7 +71,7 @@ parse_date_time(uber$Date.Time, order = 'mdy HMS') #slow but forgiving
 uber$Date.Time = as.POSIXct(uber$Date.Time) #fastest! But data needs to be in the format already or it won't work.
 
 
-#lets play around with the data!
+## lets play around with the data!
 
 trip_times = as.data.frame(table(uber$Date.Time, uber$Base))
 #so this aggregation sucks.

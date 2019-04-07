@@ -28,11 +28,7 @@
   
     
   
-  <meta name="description" content="library(tidyverse) library(data.table) options(scipen =999) setwd(&ldquo;C:/Users/lamja/Documents/R/uber-pickups-in-new-york-city&rdquo;)
-uber = read.csv(&ldquo;uber-raw-data-sep14.csv&rdquo;) str(uber) sum(is.na(uber)) #Date.Time is not in a readable time format for r. Let&rsquo;s convert it.
-#I like to use datetime as 2/20/2019 8:15:55PM but my friend from Latvia uses datetime in 20-02-2019 20:15:55, which one is correct?
-#r says neither!
-#what is the ISO 8601 standard? #https://en.wikipedia.org/wiki/ISO_8601 #R likes to use POSIXct when working with dates. This follows the ISO 8601 standard.">
+  <meta name="description" content="library(tidyverse) library(data.table) options(scipen =999) setwd(&quot;/Users/Jacky/Downloads/uber-pickups-in-new-york-city&quot;) # Download link: https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city/data uber = read.csv(&quot;uber-raw-data-sep14.csv&quot;) str(uber) sum(is.na(uber))     Tables Are Cool     col 3 is right-aligned $1600   col 2 is centered $12   zebra stripes are neat $1       Date.Time Lat Lon Base     9/1/2014 0:01:00 40.2201 -74.0021 B02512   9/1/2014 0:01:00 40.7500 -74.0027 B02512   9/1/2014 0:03:00 40.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/quickstart-to-r/">
@@ -138,11 +134,7 @@ uber = read.csv(&ldquo;uber-raw-data-sep14.csv&rdquo;) str(uber) sum(is.na(uber)
   <meta property="og:site_name" content="Jacky Lam">
   <meta property="og:url" content="/tutorial/quickstart-to-r/">
   <meta property="og:title" content="Example Page | Jacky Lam">
-  <meta property="og:description" content="library(tidyverse) library(data.table) options(scipen =999) setwd(&ldquo;C:/Users/lamja/Documents/R/uber-pickups-in-new-york-city&rdquo;)
-uber = read.csv(&ldquo;uber-raw-data-sep14.csv&rdquo;) str(uber) sum(is.na(uber)) #Date.Time is not in a readable time format for r. Let&rsquo;s convert it.
-#I like to use datetime as 2/20/2019 8:15:55PM but my friend from Latvia uses datetime in 20-02-2019 20:15:55, which one is correct?
-#r says neither!
-#what is the ISO 8601 standard? #https://en.wikipedia.org/wiki/ISO_8601 #R likes to use POSIXct when working with dates. This follows the ISO 8601 standard."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="library(tidyverse) library(data.table) options(scipen =999) setwd(&quot;/Users/Jacky/Downloads/uber-pickups-in-new-york-city&quot;) # Download link: https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city/data uber = read.csv(&quot;uber-raw-data-sep14.csv&quot;) str(uber) sum(is.na(uber))     Tables Are Cool     col 3 is right-aligned $1600   col 2 is centered $12   zebra stripes are neat $1       Date.Time Lat Lon Base     9/1/2014 0:01:00 40.2201 -74.0021 B02512   9/1/2014 0:01:00 40.7500 -74.0027 B02512   9/1/2014 0:03:00 40."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-09-09T00:00:00-04:00">
@@ -344,16 +336,20 @@ uber = read.csv(&ldquo;uber-raw-data-sep14.csv&rdquo;) str(uber) sum(is.na(uber)
   
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/tutorial/">Overview</a>
+    <a class="docs-toc-link" href="/tutorial/">Welcome</a>
 
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/tutorial/quickstart-to-r/">Example Topic</a>
+    <a class="docs-toc-link" href="/tutorial/quickstart-to-r/">Transportation</a>
     <ul class="nav docs-sidenav">
       
       <li class="active">
-        <a href="/tutorial/quickstart-to-r/">Example Page</a>
+        <a href="/tutorial/quickstart-to-r/">Quick Start to Data Analysis in Transportation</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/example/">Example Page</a>
       </li>
       
     </ul>
@@ -372,7 +368,15 @@ uber = read.csv(&ldquo;uber-raw-data-sep14.csv&rdquo;) str(uber) sum(is.na(uber)
       <p class="docs-toc-title">On this page</p>
       
 
-      
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#datetime">Datetime</a></li>
+<li><a href="#lets-play-around-with-the-data">lets play around with the data!</a></li>
+</ul></li>
+</ul>
+</nav>
 
       <ul class="nav toc-top">
         <li><a href="#">Back to top</a></li>
@@ -390,7 +394,107 @@ uber = read.csv(&ldquo;uber-raw-data-sep14.csv&rdquo;) str(uber) sum(is.na(uber)
           <h1 itemprop="name">Example Page</h1>
 
           <div class="article-style" itemprop="articleBody">
-            <p>library(tidyverse)
+            
+
+<pre><code class="language-r">library(tidyverse)
+library(data.table)
+options(scipen =999)
+setwd(&quot;/Users/Jacky/Downloads/uber-pickups-in-new-york-city&quot;)
+# Download link: https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city/data
+
+uber = read.csv(&quot;uber-raw-data-sep14.csv&quot;)
+str(uber)
+sum(is.na(uber))
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Date.Time</th>
+<th>Lat</th>
+<th>Lon</th>
+<th>Base</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>9/1/2014 0:01:00</td>
+<td>40.2201</td>
+<td>-74.0021</td>
+<td>B02512</td>
+</tr>
+
+<tr>
+<td>9/1/2014 0:01:00</td>
+<td>40.7500</td>
+<td>-74.0027</td>
+<td>B02512</td>
+</tr>
+
+<tr>
+<td>9/1/2014 0:03:00</td>
+<td>40.7559</td>
+<td>-73.9864</td>
+<td>B02512</td>
+</tr>
+
+<tr>
+<td>9/1/2014 0:06:00</td>
+<td>40.7450</td>
+<td>-73.9889</td>
+<td>B02512</td>
+</tr>
+
+<tr>
+<td>9/1/2014 0:11:00</td>
+<td>40.8145</td>
+<td>-73.9444</td>
+<td>B02512</td>
+</tr>
+
+<tr>
+<td>9/1/2014 0:12:00</td>
+<td>40.6735</td>
+<td>-73.9918</td>
+<td>B02512</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="datetime">Datetime</h2>
+
+<p>library(tidyverse)
 library(data.table)
 options(scipen =999)
 setwd(&ldquo;C:/Users/lamja/Documents/R/uber-pickups-in-new-york-city&rdquo;)</p>
@@ -417,7 +521,7 @@ uber$Date.Time = strptime(uber$Date.Time, &ldquo;%m/%d/%Y %H:%M:%S&rdquo;) #fast
 parse_date_time(uber$Date.Time, order = &lsquo;mdy HMS&rsquo;) #slow but forgiving
 uber$Date.Time = as.POSIXct(uber$Date.Time) #fastest! But data needs to be in the format already or it won&rsquo;t work.</p>
 
-<p>#lets play around with the data!</p>
+<h2 id="lets-play-around-with-the-data">lets play around with the data!</h2>
 
 <p>trip_times = as.data.frame(table(uber$Date.Time, uber$Base))
 #so this aggregation sucks.</p>
