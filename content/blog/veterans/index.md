@@ -44,7 +44,3 @@ Visualizing this dataset helped us understand that areas with the highest propor
 https://www.census.gov/geo/maps-data/data/cbf/cbf_state.html  
 http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=927  
 https://www.va.gov/vetdata/
-
-### Interesting Articles:  
-https://www.osc.state.ny.us/reports/other/veterans_11_2015.pdf  
-https://www.syracuse.com/state/index.ssf/2015/11/nys_veterans_where_they_live_when_they_served.html  
