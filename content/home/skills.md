@@ -19,18 +19,18 @@ subtitle = ""
   icon_pack = "fab"
   name = "R"
   description = ""
-  
-[[feature]]
-  icon = "database"
-  icon_pack = "fas"
-  name = "SQL"
-  description = ""
 
 [[feature]]
   icon = "python"
   icon_pack = "fab"
   name = "Python"
   description = "" 
+
+[[feature]]
+  icon = "database"
+  icon_pack = "fas"
+  name = "SQL"
+  description = ""
 
 [[feature]]
   icon = "calculator"
@@ -43,5 +43,5 @@ subtitle = ""
   icon_pack = "fas"
   name = "Photography"
   description = ""
-
+  
 +++
