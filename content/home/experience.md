@@ -24,7 +24,23 @@ date_format = "Jan 2006"
   location = "New York"
   date_start = "2016-03-01"
   date_end = ""
-  description = """"""
+  description = """
+- <b>Predictive Modeling:</b> Created a linear model that predicted fares in Taxi, Uber, Lyft, Via, & Juno. The model
+compared app company rates against taxi rates to support the creation of a new income policy for taxi drivers. The
+taxi model predicted 90% of taxi fares in 2018 with a 3.34% margin of error.
+<br>
+- <b>Geographic Information System (GIS):</b> Overhauled the Department of Transportation’s listing of
+Taxi/For-Hire Vehicle Relief stands (parking spaces) by creating a driver-friendly map. The map has received over
+435,000 views within the first six months of release.
+<br>
+- <b>Data Wrangling & Compliance:</b> Experienced with creating regulatory data specifications, working with
+vendors on compliance, and collaborating with IT to load data into production.
+<br>
+- <b>Big Data:</b> Extensive experience working on datasets between 250,000-600,000 records a day and conducting
+analysis ranging from one month to several years.
+- <b>Innovative:</b> Procured educational data science software (DataCamp) for Agency-wide use. There are currently 26
+active employees learning R & Python. Prior to procurement, employees used Microsoft Access and Excel for data
+analysis."""
 
 [[experience]]
   title = "Street Tree Census Assistant Coordinator"
@@ -33,7 +49,13 @@ date_format = "Jan 2006"
   location = "New York"
   date_start = "2015-03-01"
   date_end = "2016-03-01"
-  description = """"""
+  description = """
+- <b>Supervisor:</b> Supervised a staff of 25 to train volunteers on data collection of over 660,000 street trees in NYC.
+- <b>Asset Management:</b> Lead administrator of asset management software (Histree) provided by Nektar Inc. Histree
+stored volunteer information, company assets, and recorded the movement of assets.
+- <b>Public Relations:</b> Agency liaison for sponsorship with BMW. BMW provided 20 brand new BMW i3s to
+facilitate data collection for the first six months of the census.
+- <b>Reliable:</b> Planned 5-10 daily events for six consecutive months with strict attention"""
 
 [[experience]]
   title = "Operations Manager"
@@ -42,7 +64,11 @@ date_format = "Jan 2006"
   location = "New York"
   date_start = "2014-08-01"
   date_end = "2015-03-01"
-  description = """"""
+  description = """
+- <b>Supervisor:</b> Oversaw the operations of a small company with 7 employees and worked directly under the CEO.
+- <b>Business-to-Business (B2B):</b> Managed the business accounts of seven high-end retail boutiques.
+- <b>Operational Streamlining:</b> Increased office efficiency by introducing new workflows and usage of cloud software.
+  """
 
 [[experience]]
   title = "Air Battle Management System Operator"

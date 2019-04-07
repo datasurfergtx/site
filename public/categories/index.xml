@@ -2,30 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Jacky Lam</title>
-    <link>https://jackylam.io/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Jacky Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jacky Lam</copyright>
     
-	<atom:link href="https://jackylam.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Visualization</title>
-      <link>https://jackylam.io/categories/data-visualization/</link>
+      <link>/categories/data-visualization/</link>
       <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
       
-      <guid>https://jackylam.io/categories/data-visualization/</guid>
+      <guid>/categories/data-visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GIS</title>
-      <link>https://jackylam.io/categories/gis/</link>
+      <link>/categories/gis/</link>
       <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
       
-      <guid>https://jackylam.io/categories/gis/</guid>
+      <guid>/categories/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear Algebra</title>
+      <link>/categories/linear-algebra/</link>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/categories/linear-algebra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive Modeling</title>
+      <link>/categories/predictive-modeling/</link>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/categories/predictive-modeling/</guid>
       <description></description>
     </item>
     

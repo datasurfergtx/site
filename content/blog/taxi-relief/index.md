@@ -8,7 +8,7 @@ image:
   focal_point: "Right"
   preview_only: false
 subtitle: ''
-summary: 
+summary: A complete overhaul of the online taxi relief stand listing.
 title: 'Visualizing Taxi Relief Stands in NYC'
 categories: ["Data Visualization", "GIS"]
 reading_time: true
