@@ -5,7 +5,6 @@ menu:
   tutorial:
     name: Welcome
     weight: 1
-title: Overview
 toc: true
 type: docs
 ---
