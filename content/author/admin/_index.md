@@ -7,12 +7,16 @@ education:
   - course: Bachelor of Business Administration
     institution: Queens College, City University of New York
     year: 2014
+  - course: Data Scientist with R Track
+    institution: DataCamp
+    year: 2017
 
 email: "ny.jackylam@gmail.com"
 interests:
+- Data Science
+- Data Analysis & Visualization
 - Linear Algebra
 - Statistics
-- Data Analysis & Visualization
 - Photography
 
 name: Jacky Lam
