@@ -20,8 +20,7 @@
       <guid>/tutorial/uber-data/</guid>
       <description>In this tutorial we&amp;rsquo;re going to:
  Import Data Clean Datetime Aggregate Data Graph  Import Data The dataset we will be working on today will be uber&amp;rsquo;s NYC September 2014 dataset. You can find the dataset and a bunch more on Kaggle or click here.
-Once you have your data, import it, look at the data structure.
-str(uber) $ Date.Time: Factor w/ 42907 levels &amp;quot;9/1/2014 0:00:00&amp;quot;,..: 2 2 4 7 12 13 16 17 33 34 .</description>
+Once you have your data, import it, look at the data structure. We&amp;rsquo;re also going to use the tidyverse package for this tutorial.</description>
     </item>
     
   </channel>

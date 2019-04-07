@@ -23,7 +23,7 @@ In this tutorial we're going to:
 
 The dataset we will be working on today will be uber's NYC September 2014 dataset. You can find the dataset and a bunch more on Kaggle or click [here.](https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city/data)
 
-Once you have your data, import it, look at the data structure.
+Once you have your data, import it, look at the data structure. We're also going to use the ```tidyverse``` package for this tutorial.
 ```r
 str(uber)
  $ Date.Time: Factor w/ 42907 levels "9/1/2014 0:00:00",..: 2 2 4 7 12 13 16 17 33 34 ...
@@ -75,7 +75,7 @@ parse_date_time(uber$Date.Time, order = 'mdy HMS') #readr package
 |%y|	2-digit year|	%Y|	4-digit year|
 |%z|	Offset from GMT|	%Z|	Time zone (character)|
 
-```parse_date_time``` is more forgiving. It accepts a wider range of datetime formats and you will not need to use the chart above to specify your datetimes. However, this makes the function a lot slower to work with. If your datetime follows some kind of uniform pattern, ```strptime()``` will work just fine.
+```parse_date_time``` is more forgiving datetime function. It accepts a wider range of datetime formats and you will not need to use the chart above to specify your datetimes. However, this makes the function a lot slower to work with. If your datetime follows some kind of uniform pattern, ```strptime()``` will work just fine.
 
 ## Aggregate Data
 Let's look at trip volume per day by base.
@@ -101,8 +101,8 @@ Let's look at trip volume per day by base.
 We might want this to be in a data frame, so we can play around with it.
 
 - ```trips = data.frame(table(uber$date,uber$Base))```
-  -Notice that our data is saved in a long format and not as the nice chart above.
-- ```trips = spread(trips,Var2,Freq)``` we'll worry about the column names later.
+  - Notice that our data is saved in a long format. It's not as nicely formatted as the chart above. We'll revisit this later when we graph our data.
+- ```trips = spread(trips,Var2,Freq)``` This reformats our data nicely.
 
 Now our data frame should look something like the chart above but the date is named Var1. <br>
 ```colnames(trips[1]) <- "date"``` That should fix it!

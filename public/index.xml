@@ -121,7 +121,7 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
 
 &lt;p&gt;The dataset we will be working on today will be uber&amp;rsquo;s NYC September 2014 dataset. You can find the dataset and a bunch more on Kaggle or click &lt;a href=&#34;https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city/data&#34; target=&#34;_blank&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Once you have your data, import it, look at the data structure.&lt;/p&gt;
+&lt;p&gt;Once you have your data, import it, look at the data structure. We&amp;rsquo;re also going to use the &lt;code&gt;tidyverse&lt;/code&gt; package for this tutorial.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str(uber)
  $ Date.Time: Factor w/ 42907 levels &amp;quot;9/1/2014 0:00:00&amp;quot;,..: 2 2 4 7 12 13 16 17 33 34 ...
@@ -300,7 +300,7 @@ parse_date_time(uber$Date.Time, order = &#39;mdy HMS&#39;) #readr package
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;code&gt;parse_date_time&lt;/code&gt; is more forgiving. It accepts a wider range of datetime formats and you will not need to use the chart above to specify your datetimes. However, this makes the function a lot slower to work with. If your datetime follows some kind of uniform pattern, &lt;code&gt;strptime()&lt;/code&gt; will work just fine.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;parse_date_time&lt;/code&gt; is more forgiving datetime function. It accepts a wider range of datetime formats and you will not need to use the chart above to specify your datetimes. However, this makes the function a lot slower to work with. If your datetime follows some kind of uniform pattern, &lt;code&gt;strptime()&lt;/code&gt; will work just fine.&lt;/p&gt;
 
 &lt;h2 id=&#34;aggregate-data&#34;&gt;Aggregate Data&lt;/h2&gt;
 
@@ -415,8 +415,11 @@ parse_date_time(uber$Date.Time, order = &#39;mdy HMS&#39;) #readr package
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;trips = data.frame(table(uber$date,uber$Base))&lt;/code&gt;
--Notice that our data is saved in a long format and not as the nice chart above.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;trips = spread(trips,Var2,Freq)&lt;/code&gt; we&amp;rsquo;ll worry about the column names later.&lt;/li&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Notice that our data is saved in a long format. It&amp;rsquo;s not as nicely formatted as the chart above. We&amp;rsquo;ll revisit this later when we graph our data.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;trips = spread(trips,Var2,Freq)&lt;/code&gt; This reformats our data nicely.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Now our data frame should look something like the chart above but the date is named Var1. &lt;br&gt;
