@@ -59,6 +59,8 @@ parse_date_time(uber$Date.Time, order = 'mdy HMS') #readr package
 ```
 ```strptime()``` is very fast but is not flexible with weird date formats. It will work fine for this dataset. Below is a chart of datetime formats you will encounter and how you should specify your datetime when you convert it in ```strptime()```
 
+### Datetime formats
+
 |R Format| Meaning           |R Format|	Meaning    |
 |--------|-------------------|--------|------------|
 |%a      |Abbreviated weekday|%A      |Full weekday|

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on Jacky Lam</title>
-    <link>https://jackylam.io/tutorial/</link>
+    <link>/tutorial/</link>
     <description>Recent content in Overview on Jacky Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jacky Lam</copyright>
     <lastBuildDate>Sun, 07 Apr 2019 00:00:00 -0400</lastBuildDate>
     
-	<atom:link href="https://jackylam.io/tutorial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Explorartory Analysis on Uber Data</title>
-      <link>https://jackylam.io/tutorial/uber-data/</link>
+      <link>/tutorial/uber-data/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 -0400</pubDate>
       
-      <guid>https://jackylam.io/tutorial/uber-data/</guid>
+      <guid>/tutorial/uber-data/</guid>
       <description>In this tutorial we&amp;rsquo;re going to:
  Import Data Clean Datetime Aggregate Data Graph  Import Data The dataset we will be working on today will be uber&amp;rsquo;s NYC September 2014 dataset. You can find the dataset and a bunch more on Kaggle or click here.
 Once you have your data, import it, look at the data structure.
