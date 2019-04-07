@@ -2,49 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>admin on Jacky Lam</title>
-    <link>/authors/admin/</link>
+    <link>https://jackylam.io/authors/admin/</link>
     <description>Recent content in admin on Jacky Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jacky Lam</copyright>
-    <lastBuildDate>Sat, 06 Apr 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 Nov 2018 00:00:00 -0400</lastBuildDate>
     
-	<atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jackylam.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Predicting Taxi Fares in NYC</title>
-      <link>/blog/taxi-fare/</link>
-      <pubDate>Sat, 06 Apr 2019 00:00:00 -0400</pubDate>
-      
-      <guid>/blog/taxi-fare/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Visualizing Veteran Population</title>
-      <link>/blog/veterans/</link>
+      <link>https://jackylam.io/blog/veterans/</link>
       <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
       
-      <guid>/blog/veterans/</guid>
+      <guid>https://jackylam.io/blog/veterans/</guid>
       <description>The US Department of Veterans Affairs is a federal agency responsible for taking care of US military personnel after they separated from service. The VA provides healthcare, education, disability, and other benefits to US veterans. The VA also has a lot of data on US veterans available for free. There&amp;rsquo;s a bunch of spreadsheets and pivot tables on veteran population. The data is given in county format, which is good for our analysis later, but we need to aggregate the data to view it at a state level.</description>
     </item>
     
     <item>
-      <title>Visualizing Taxi Relief Stands in NYC</title>
-      <link>/blog/taxi-relief/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>/blog/taxi-relief/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title></title>
-      <link>/author/admin/</link>
+      <link>https://jackylam.io/author/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/author/admin/</guid>
+      <guid>https://jackylam.io/author/admin/</guid>
       <description>Hi there! I’m Jacky, a data-loving transportation policy analyst. My passion for data began in 2016 while working for the NYC Taxi &amp;amp; Limousine Commission. For the past three years, I worked on researching and implementing policies that affect the lives of over 8 million New Yorkers with a data-driven approach. I created this site to be the home for my work and personal projects.
 I studied Business Administration at Queens College and enlisted in the military after finishing my undergraduate degree.</description>
     </item>
