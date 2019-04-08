@@ -75,7 +75,7 @@ parse_date_time(uber$Date.Time, order = 'mdy HMS') #readr package
 |%y|	2-digit year|	%Y|	4-digit year|
 |%z|	Offset from GMT|	%Z|	Time zone (character)|
 
-```parse_date_time``` is more forgiving datetime function. It accepts a wider range of datetime formats and you will not need to use the chart above to specify your datetimes. However, this makes the function a lot slower to work with. If your datetime follows some kind of uniform pattern, ```strptime()``` will work just fine.
+```parse_date_time``` is a more forgiving datetime function. It accepts a wider range of datetime formats and you will not need to use the chart above to specify your datetimes. However, this makes the function a lot slower to work with. If your datetime follows some kind of uniform pattern, ```strptime()``` will work just fine.
 
 ## Aggregate Data
 Let's look at trip volume per day by base.
