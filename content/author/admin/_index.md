@@ -23,7 +23,7 @@ name: Jacky Lam
 organizations:
 - name: Taxi & Limousine Commission in the City of New York
   url: "https://www1.nyc.gov/site/tlc/index.page"
-role: Policy Analyst
+role: Senior Analyst
 social:
 - icon: envelope
   icon_pack: fas
