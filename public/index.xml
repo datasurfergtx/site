@@ -300,7 +300,7 @@ parse_date_time(uber$Date.Time, order = &#39;mdy HMS&#39;) #readr package
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;code&gt;parse_date_time&lt;/code&gt; is more forgiving datetime function. It accepts a wider range of datetime formats and you will not need to use the chart above to specify your datetimes. However, this makes the function a lot slower to work with. If your datetime follows some kind of uniform pattern, &lt;code&gt;strptime()&lt;/code&gt; will work just fine.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;parse_date_time&lt;/code&gt; is a more forgiving datetime function. It accepts a wider range of datetime formats and you will not need to use the chart above to specify your datetimes. However, this makes the function a lot slower to work with. If your datetime follows some kind of uniform pattern, &lt;code&gt;strptime()&lt;/code&gt; will work just fine.&lt;/p&gt;
 
 &lt;h2 id=&#34;aggregate-data&#34;&gt;Aggregate Data&lt;/h2&gt;
 
