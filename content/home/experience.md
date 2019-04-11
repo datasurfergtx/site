@@ -31,12 +31,12 @@ taxi model predicted 90% of taxi fares in 2018 with a 3.34% margin of error.
 <br>
 - <b>Geographic Information System (GIS):</b> Overhauled the Department of Transportation’s listing of
 Taxi/For-Hire Vehicle Relief stands (parking spaces) by creating a driver-friendly map. The map has received over
-435,000 views within the first six months of release.
+500,000 views within the first six months of release.
 <br>
 - <b>Data Wrangling & Compliance:</b> Experienced with creating regulatory data specifications, working with
 vendors on compliance, and collaborating with IT to load data into production.
 <br>
-- <b>Big Data:</b> Extensive experience working on datasets between 250,000-600,000 records a day and conducting
+- <b>Big Data:</b> Extensive experience working on datasets between 250,000-1,000,000 records a day and conducting
 analysis ranging from one month to several years.
 - <b>Innovative:</b> Procured educational data science software (DataCamp) for Agency-wide use. There are currently 26
 active employees learning R & Python. Prior to procurement, employees used Microsoft Access and Excel for data
