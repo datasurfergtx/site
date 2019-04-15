@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jacky Lam on Jacky Lam</title>
-    <link>/</link>
+    <link>https://jackylam.io/</link>
     <description>Recent content in Jacky Lam on Jacky Lam</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Example Talk</title>
-      <link>/talk/example/</link>
+      <link>https://jackylam.io/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 -0400</pubDate>
       
-      <guid>/talk/example/</guid>
+      <guid>https://jackylam.io/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
@@ -37,20 +37,11 @@
     </item>
     
     <item>
-      <title>Predicting Taxi Fares in NYC</title>
-      <link>/blog/taxi-fare/</link>
-      <pubDate>Sat, 06 Apr 2019 00:00:00 -0400</pubDate>
-      
-      <guid>/blog/taxi-fare/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Visualizing Veteran Population</title>
-      <link>/blog/veterans/</link>
+      <link>https://jackylam.io/blog/veterans/</link>
       <pubDate>Fri, 30 Nov 2018 00:00:00 -0400</pubDate>
       
-      <guid>/blog/veterans/</guid>
+      <guid>https://jackylam.io/blog/veterans/</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;https://www.va.gov/&#34; target=&#34;_blank&#34;&gt;US Department of Veterans Affairs&lt;/a&gt; is a federal agency responsible for taking care of US military personnel after they separated from service. The VA provides healthcare, education, disability, and other benefits to US veterans. The &lt;a href=&#34;https://www.va.gov/vetdata/veteran_population.asp&#34; target=&#34;_blank&#34;&gt;VA&lt;/a&gt; also has a lot of data on US veterans available for free. There&amp;rsquo;s a bunch of spreadsheets and pivot tables on veteran population. The data is given in county format, which is good for our analysis later, but we need to aggregate the data to view it at a state level.&lt;/p&gt;
@@ -92,20 +83,11 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
     </item>
     
     <item>
-      <title>Visualizing Taxi Relief Stands in NYC</title>
-      <link>/blog/taxi-relief/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>/blog/taxi-relief/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Explorartory Analysis on Uber Data</title>
-      <link>/tutorial/uber-data/</link>
+      <link>https://jackylam.io/tutorial/uber-data/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 -0400</pubDate>
       
-      <guid>/tutorial/uber-data/</guid>
+      <guid>https://jackylam.io/tutorial/uber-data/</guid>
       <description>
 
 &lt;p&gt;In this tutorial we&amp;rsquo;re going to:&lt;/p&gt;
@@ -483,35 +465,25 @@ parse_date_time(uber$Date.Time, order = &#39;mdy HMS&#39;) #readr package
 
 &lt;p&gt;After all our hard work, we can finally graph our data!
 &lt;code&gt;ggplot(graph, aes(x = Date, y = Trips, color = as.factor(Base))) + geom_line()&lt;/code&gt;
-&lt;img src=&#34;/tutorial/uber-graph.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 -0400</pubDate>
-      
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;img src=&#34;https://jackylam.io/tutorial/uber-graph.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>External Project</title>
-      <link>/project/external-project/</link>
+      <link>https://jackylam.io/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>/project/external-project/</guid>
+      <guid>https://jackylam.io/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internal Project</title>
-      <link>/project/internal-project/</link>
+      <link>https://jackylam.io/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>/project/internal-project/</guid>
+      <guid>https://jackylam.io/project/internal-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
@@ -526,30 +498,30 @@ parse_date_time(uber$Date.Time, order = &#39;mdy HMS&#39;) #readr package
     
     <item>
       <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-id/</link>
+      <link>https://jackylam.io/publication/person-re-id/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 -0400</pubDate>
       
-      <guid>/publication/person-re-id/</guid>
+      <guid>https://jackylam.io/publication/person-re-id/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Mobile visual clothing search</title>
-      <link>/publication/clothing-search/</link>
+      <link>https://jackylam.io/publication/clothing-search/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 -0400</pubDate>
       
-      <guid>/publication/clothing-search/</guid>
+      <guid>https://jackylam.io/publication/clothing-search/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>/slides/example-slides/</link>
+      <link>https://jackylam.io/slides/example-slides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/slides/example-slides/</guid>
+      <guid>https://jackylam.io/slides/example-slides/</guid>
       <description>
 
 &lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
