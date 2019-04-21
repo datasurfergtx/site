@@ -92,19 +92,22 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
     </item>
     
     <item>
-      <title>Visualizing Taxi Relief Stands in NYC</title>
+      <title>Creating a Practical Tool for Taxi/Uber Drivers</title>
       <link>/blog/taxi-relief/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>/blog/taxi-relief/</guid>
-      <description>&lt;div id=&#34;Container&#34;
+      <description>&lt;p&gt;&lt;a href=&#34;https://www1.nyc.gov/html/dot/html/motorist/taxirelief.shtml&#34; target=&#34;_blank&#34;&gt;Original Listing&lt;/a&gt; of relief stands across NYC.
+&lt;div id=&#34;Container&#34;
  style=&#34;padding-bottom:85%; position:relative; display:block; width: 100%&#34;&gt;
- &lt;iframe id=&#34;ViostreamIframe&#34; 
+ &lt;iframe id=&#34;ReliefStandMap&#34; 
   width=&#34;100%&#34; height=&#34;100%&#34; 
   src=&#34;https://www.google.com/maps/d/embed?mid=1DBI0nZ8NTAwyLggrq4-hxohNmd0Piucd&#34;
   frameborder=&#34;0&#34; allowfullscreen=&#34;&#34;
   style=&#34;position:absolute; top:0; left: 0&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
+&lt;br&gt;
+The map has been featured on &lt;a href=&#34;https://www.uber.com/drive/new-york/where-to-drive/&#34; target=&#34;_blank&#34;&gt;Uber&amp;rsquo;s webpage&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
