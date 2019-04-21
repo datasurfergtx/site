@@ -97,7 +97,15 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
       <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>/blog/taxi-relief/</guid>
-      <description></description>
+      <description>&lt;div id=&#34;Container&#34;
+ style=&#34;padding-bottom:85%; position:relative; display:block; width: 100%&#34;&gt;
+ &lt;iframe id=&#34;ViostreamIframe&#34; 
+  width=&#34;100%&#34; height=&#34;100%&#34; 
+  src=&#34;https://www.google.com/maps/d/embed?mid=1DBI0nZ8NTAwyLggrq4-hxohNmd0Piucd&#34;
+  frameborder=&#34;0&#34; allowfullscreen=&#34;&#34;
+  style=&#34;position:absolute; top:0; left: 0&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
