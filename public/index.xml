@@ -112,7 +112,7 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
 &lt;p&gt;Through many months of online and in-field research, I created a more refined list with relevant information for drivers about each stand. This information includes an estimated amount of parking spaces, hours/limits space is available, public restrooms, restaurants nearby, subway stations, and a lot more.&lt;/p&gt;
 
 &lt;div id=&#34;Container&#34;
- style=&#34;padding-bottom:85%; position:relative; display:block; width: 100%&#34;&gt;
+ style=&#34;padding-bottom:75%; position:relative; display:block; width: 100%&#34;&gt;
  &lt;iframe id=&#34;ReliefStandMap&#34; 
   width=&#34;100%&#34; height=&#34;100%&#34; 
   src=&#34;https://www.google.com/maps/d/embed?mid=1DBI0nZ8NTAwyLggrq4-hxohNmd0Piucd&#34;

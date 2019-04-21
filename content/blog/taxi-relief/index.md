@@ -23,7 +23,7 @@ Taxi drivers are undoubtedly hard-working professionals that work long hours wit
 Through many months of online and in-field research, I created a more refined list with relevant information for drivers about each stand. This information includes an estimated amount of parking spaces, hours/limits space is available, public restrooms, restaurants nearby, subway stations, and a lot more.
 
 <div id="Container"
- style="padding-bottom:85%; position:relative; display:block; width: 100%">
+ style="padding-bottom:75%; position:relative; display:block; width: 100%">
  <iframe id="ReliefStandMap" 
   width="100%" height="100%" 
   src="https://www.google.com/maps/d/embed?mid=1DBI0nZ8NTAwyLggrq4-hxohNmd0Piucd"
