@@ -17,4 +17,5 @@ Welcome to the tutorials section! Here you can find tutorials on things that I h
 - [Exploratory Analysis on Uber Data](https://jackylam.io/tutorial/uber-data/)
 
 ## <b>Blog Posts</b>
+- [Creating a Practical Tool for Taxi/Uber Driver](https://jackylam.io/blog/taxi-relief/)
 - [Visualizing Veteran Population](https://jackylam.io/blog/veterans/)

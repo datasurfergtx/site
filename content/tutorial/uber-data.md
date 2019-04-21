@@ -126,3 +126,8 @@ It looks like our dates are back into factors. No worries, since we're already i
 After all our hard work, we can finally graph our data!
 ```ggplot(graph, aes(x = Date, y = Trips, color = as.factor(Base))) + geom_line()```
 ![png](/tutorial/uber-graph.png)
+
+<br>
+## <b>Blog Posts</b>
+- [Creating a Practical Tool for Taxi/Uber Driver](https://jackylam.io/blog/taxi-relief/)
+- [Visualizing Veteran Population](https://jackylam.io/blog/veterans/)

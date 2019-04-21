@@ -37,5 +37,8 @@ Now we can see that Jefferson and Hamilton County have the most veterans by perc
 ## <b>Importance of Visualization</b>
 Visualizing this dataset helped us understand that areas with the highest proportion of veterans do not happen by chance. More veterans will live nearby a VA.  I think this approach would be useful for the VA if they have plans to build new VA hospitals or offices that provide benefits to veterans.
 
+## <b>Recent Posts</b>
+- [Creating a Practical Tool for Taxi/Uber Driver](https://jackylam.io/blog/taxi-relief/)
+
 ## <b>Tutorials:</b>
 - [Explorartory Analysis on Uber Data](https://jackylam.io/tutorial/uber-data/)
