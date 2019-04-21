@@ -42,7 +42,7 @@ There are 4 types of stands spread across NYC, and they allow specific privilege
 - <b>FHV Only:</b> FHV drivers are allowed to park their vehicles for up to one hour.
 
 <br>
-The map has been featured on [Uber's webpage](https://www.uber.com/drive/new-york/where-to-drive/)
+The map has been featured on [Uber's webpage.](https://www.uber.com/drive/new-york/where-to-drive/)
 <br>
 ## <b>Recent Posts</b>
 - [Visualizing Veteran Population](https://jackylam.io/blog/veterans/)
