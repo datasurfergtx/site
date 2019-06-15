@@ -4,8 +4,14 @@ author: "Jacky Lam"
 date: "6/15/2019"
 output: html_document
 params:
-  password: "test"
+  pwd:
+    label: "Enter the Password, please!"
+    value: ""
+    input: password
 ---
+
+Your password is `r params$pwd`
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
