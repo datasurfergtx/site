@@ -794,7 +794,32 @@ $$&lt;/p&gt;
       <description>
 
 
-&lt;p&gt;Your password is&lt;/p&gt;
+&lt;SCRIPT&gt;
+function passWord() {
+var testV = 1;
+var pass1 = prompt(&#39;Please Enter Your Password&#39;,&#39; &#39;);
+while (testV &lt; 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == &#34;letmein&#34;) {
+alert(&#39;You Got it Right!&#39;);
+window.open(&#39;www.wikihow.com&#39;);
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt(&#39;Access Denied - Password Incorrect, Please Try Again.&#39;,&#39;Password&#39;);
+}
+if (pass1.toLowerCase()!=&#34;password&#34; &amp; testV ==3) 
+history.go(-1);
+return &#34; &#34;;
+} 
+&lt;/SCRIPT&gt;
+&lt;CENTER&gt;
+&lt;FORM&gt;
+&lt;input type=&#34;button&#34; value=&#34;Enter Protected Area&#34; onClick=&#34;passWord()&#34;&gt;
+&lt;/FORM&gt;
+&lt;/CENTER&gt;
 &lt;div id=&#34;r-markdown&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;R Markdown&lt;/h2&gt;
 &lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
