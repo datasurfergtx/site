@@ -1,9 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
     
       <loc>/talk/example/</loc>
+      <lastmod>2030-06-01T13:00:00-04:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2030-06-01T13:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/talk/</loc>
       <lastmod>2030-06-01T13:00:00-04:00</lastmod>
     </url>
   
@@ -15,8 +27,63 @@
   
     <url>
     
+      <loc>/authors/</loc>
+      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/categories/</loc>
+      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/categories/linear-algebra/</loc>
+      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>/blog/taxi-fare/</loc>
       <lastmod>2019-04-06T00:00:00-04:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/categories/predictive-modeling/</loc>
+      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/authors/admin/</loc>
+      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/blog/</loc>
+      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/categories/data-visualization/</loc>
+      <lastmod>2018-11-30T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/categories/gis/</loc>
+      <lastmod>2018-11-30T00:00:00-04:00</lastmod>
+      <priority>0</priority>
     </url>
   
     <url>
@@ -45,6 +112,20 @@
   
     <url>
     
+      <loc>/tags/deep-learning/</loc>
+      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/tags/demo/</loc>
+      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>/project/external-project/</loc>
       <lastmod>2016-04-27T00:00:00-04:00</lastmod>
     </url>
@@ -57,8 +138,63 @@
   
     <url>
     
+      <loc>/project/</loc>
+      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/publication_types/2/</loc>
+      <lastmod>2015-09-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>/publication/person-re-id/</loc>
       <lastmod>2015-09-01T00:00:00-04:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/authors/ga-cushen/</loc>
+      <lastmod>2015-09-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/publication_types/</loc>
+      <lastmod>2015-09-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/publication/</loc>
+      <lastmod>2015-09-01T00:00:00-04:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/publication_types/1/</loc>
+      <lastmod>2013-07-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/authors/ms-nixon/</loc>
+      <lastmod>2013-07-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
     </url>
   
     <url>
@@ -74,15 +210,7 @@
   
     <url>
     
-      <loc>/publication_types/1/</loc>
-      <lastmod>2013-07-01T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/publication_types/2/</loc>
-      <lastmod>2015-09-01T00:00:00-04:00</lastmod>
+      <loc>/publication/test/</loc>
       <priority>0</priority>
     </url>
   
@@ -94,107 +222,6 @@
   
     <url>
     
-      <loc>/authors/</loc>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/categories/data-visualization/</loc>
-      <lastmod>2018-11-30T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/authors/ga-cushen/</loc>
-      <lastmod>2015-09-01T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/categories/gis/</loc>
-      <lastmod>2018-11-30T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2030-06-01T13:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/categories/linear-algebra/</loc>
-      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/authors/ms-nixon/</loc>
-      <lastmod>2013-07-01T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/categories/predictive-modeling/</loc>
-      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/publication_types/</loc>
-      <lastmod>2013-07-01T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/publication/</loc>
-      <lastmod>2015-09-01T00:00:00-04:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>/talk/</loc>
-      <lastmod>2030-06-01T13:00:00-04:00</lastmod>
-    </url>
-  
-    <url>
-    
       <loc>/slides/</loc>
       <priority>0</priority>
     </url>
@@ -202,26 +229,6 @@
     <url>
     
       <loc>/slides/example-slides/</loc>
-    </url>
-  
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/authors/admin/</loc>
-      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/blog/</loc>
-      <lastmod>2019-04-06T00:00:00-04:00</lastmod>
     </url>
   
 </urlset>
