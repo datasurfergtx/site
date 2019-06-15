@@ -210,12 +210,6 @@
   
     <url>
     
-      <loc>/publication/test/</loc>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
       <loc>/author/</loc>
       <priority>0</priority>
     </url>
@@ -229,6 +223,11 @@
     <url>
     
       <loc>/slides/example-slides/</loc>
+    </url>
+  
+    <url>
+    
+      <loc>/publication/test/</loc>
     </url>
   
 </urlset>
