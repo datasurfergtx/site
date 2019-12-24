@@ -21,9 +21,9 @@ interests:
 
 name: Jacky Lam
 organizations:
-- name: Taxi & Limousine Commission in the City of New York
-  url: "https://www1.nyc.gov/site/tlc/index.page"
-role: Senior Analyst
+- name: Motivate LLC.
+  url: "https://www.motivateco.com/"
+role: Senior Data Analyst
 social:
 - icon: envelope
   icon_pack: fas
