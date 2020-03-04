@@ -42,7 +42,7 @@ date_format = "Jan 2006"
   date_start = "2016-03-01"
   date_end = "2019-07-01"
   description = """
-- <b>Predictive Modeling:</b> Created a linear model that predicted fares in Taxi, Uber, Lyft, Via, \& Juno. The model compared app company rates against taxi rates to support landmark income policy for for-hire drivers.
+- <b>Predictive Modeling:</b> Created a linear model that predicted fares in Taxi, Uber, Lyft, Via, & Juno. The model compared app company rates against taxi rates to support landmark income policy for for-hire drivers.
 <br>
 - <b>Geographic Information System (GIS):</b> Overhauled the Department of Transportation's listing of Taxi/For-Hire Vehicle Relief stands (parking spaces) by creating a driver-friendly map. The map has received over 1.5 million views since October 2018.
 <br>
