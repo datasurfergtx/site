@@ -18,29 +18,37 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Senior Analyst"
+  title = "Senior Data Analyst"
+  company = "Motivate LLC."
+  company_url = "https://www.motivateco.com/"
+  location = "New York"
+  date_start = "2019-07-01"
+  date_end = ""
+  description = """
+- <b>Operations:</b> Worked with Field Teams across 8 cities in North America to track KPIs, City Program Agreements, Service Agreements, created Operational Dashboards, and advised senior leadership in driving business decisions with a data driven approach.
+<br>
+- <b>Project Manager:</b> Lead company BI Tool transition from Domo to Tableau. Identified & recreated dashboards used by the field, worked with IT to setup a cloud server, and collaborated with partner company Lyft to whitelist databases.
+<br>
+- <b>Script Optimization:</b> Optimized legacy SQL scripts with runtimes of 4-10 minutes down to 0-2 minutes. Consolidated, optimize, and automated monthly reporting scripts into one R script that runs seamlessly on Terminal.}
+<br>
+- <b>Financial Optimization:</b> Worked with Senior Leadership, Finance, and Accounting to create an on-demand P&L dashboard that combined KPI data with Accounting data from Netsuite. This provided full on-demand financial visibility for Senior Leadership.
+"""
+
+[[experience]]
+  title = "Senior Policy Analyst"
   company = "NYC Taxi & Limousine Commission"
   company_url = "https://www1.nyc.gov/site/tlc/index.page"
   location = "New York"
   date_start = "2016-03-01"
-  date_end = ""
+  date_end = "2019-07-01"
   description = """
-- <b>Predictive Modeling:</b> Created a linear model that predicted fares in Taxi, Uber, Lyft, Via, & Juno. The model
-compared app company rates against taxi rates to support the creation of a new income policy for taxi drivers. The
-taxi model predicted 90% of taxi fares in 2018 with a 3.34% margin of error.
+- <b>Predictive Modeling:</b> Created a linear model that predicted fares in Taxi, Uber, Lyft, Via, \& Juno. The model compared app company rates against taxi rates to support landmark income policy for for-hire drivers.
 <br>
-- <b>Geographic Information System (GIS):</b> Overhauled the Department of Transportation’s listing of
-Taxi/For-Hire Vehicle Relief stands (parking spaces) by creating a driver-friendly map. The map has received over
-500,000 views within the first six months of release.
+- <b>Geographic Information System (GIS):</b> Overhauled the Department of Transportation's listing of Taxi/For-Hire Vehicle Relief stands (parking spaces) by creating a driver-friendly map. The map has received over 1.5 million views since October 2018.
 <br>
-- <b>Data Wrangling & Compliance:</b> Experienced with creating regulatory data specifications, working with
-vendors on compliance, and collaborating with IT to load data into production.
+- <b>Data Wrangling & Compliance:</b> Experienced with creating regulatory data specifications, working with vendors on compliance, and collaborating with IT to load data into production.
 <br>
-- <b>Big Data:</b> Extensive experience working on datasets between 250,000-1,000,000 records a day and conducting
-analysis ranging from one month to several years.
-- <b>Innovative:</b> Procured educational data science software (DataCamp) for Agency-wide use. There are currently 26
-active employees learning R & Python. Prior to procurement, employees used Microsoft Access and Excel for data
-analysis."""
+- <b>Innovative:</b> Procured educational data science software (DataCamp) for Agency-wide use. 26 employees got to learn R \& Python. Prior to procurement, employees used Microsoft Access and Excel for data analysis."""
 
 [[experience]]
   title = "Street Tree Census Assistant Coordinator"
@@ -54,8 +62,7 @@ analysis."""
 - <b>Asset Management:</b> Lead administrator of asset management software (Histree) provided by Nektar Inc. Histree
 stored volunteer information, company assets, and recorded the movement of assets.
 - <b>Public Relations:</b> Agency liaison for sponsorship with BMW. BMW provided 20 brand new BMW i3s to
-facilitate data collection for the first six months of the census.
-- <b>Reliable:</b> Planned 5-10 daily events for six consecutive months with strict attention"""
+facilitate data collection for the first six months of the census."""
 
 [[experience]]
   title = "Operations Manager"
