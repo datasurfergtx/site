@@ -48,7 +48,7 @@ date_format = "Jan 2006"
 <br>
 - <b>Data Wrangling & Compliance:</b> Experienced with creating regulatory data specifications, working with vendors on compliance, and collaborating with IT to load data into production.
 <br>
-- <b>Innovative:</b> Procured educational data science software (DataCamp) for Agency-wide use. 26 employees got to learn R \& Python. Prior to procurement, employees used Microsoft Access and Excel for data analysis."""
+- <b>Innovative:</b> Procured educational data science software (DataCamp) for Agency-wide use. 26 employees got to learn R & Python. Prior to procurement, employees used Microsoft Access and Excel for data analysis."""
 
 [[experience]]
   title = "Street Tree Census Assistant Coordinator"
