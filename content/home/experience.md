@@ -25,13 +25,13 @@ date_format = "Jan 2006"
   date_start = "2019-07-01"
   date_end = ""
   description = """
-- <b>Operations:</b> Worked with Field Teams across 8 cities in North America to track KPIs, City Program Agreements, Service Agreements, created Operational Dashboards, and advised senior leadership in driving business decisions with a data driven approach.
+- <b>Data Warehousing:</b> Planned and implemented data warehouse architecture after Lyft acquisition. Transitioned data into Lyft's framework while maintaining legacy data.
 <br>
-- <b>Project Manager:</b> Lead company BI Tool transition from Domo to Tableau. Identified & recreated dashboards used by the field, worked with IT to setup a cloud server, and collaborated with partner company Lyft to whitelist databases.
+- <b>BI Tools:</b> Lead company BI Tool transition from Domo to Tableau. Transitioned and created more robust dashboards, reducing redundancy by consolidating multiple dashboards. Created and managed an internal slack channel to encourage open communication with field leaders.
 <br>
-- <b>Script Optimization:</b> Optimized legacy SQL scripts with runtimes of 4-10 minutes down to 0-2 minutes. Consolidated, optimize, and automated monthly reporting scripts into one R script that runs seamlessly on Terminal.}
+- <b>Operations:</b> Worked with Field Teams across 8 cities in North America to track KPIs, City Program Agreements, Service Agreements, created Operational Dashboards, and advised senior leadership in driving business decisions with a data driven approach.}
 <br>
-- <b>Financial Optimization:</b> Worked with Senior Leadership, Finance, and Accounting to create an on-demand P&L dashboard that combined KPI data with Accounting data from Netsuite. This provided full on-demand financial visibility for Senior Leadership.
+- <b>Management:</b> Managed a Data Engineer and a Data Analyst. Lead morning scrum meetings with the team to ensure projects are meeting deadlines.
 """
 
 [[experience]]
