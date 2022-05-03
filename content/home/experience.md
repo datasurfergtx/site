@@ -17,13 +17,29 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
+[[experience]]
+  title = "Senior Data Analyst"
+  company = ."nuts.com"
+  company_url = "https://www.nuts.com/"
+  <!-- location = "New Jersey" -->
+  date_start = "2021-06-01"
+  date_end = ""
+  description = """
+- <b>Product Category Development:</b> Created a universal definition for Gifting. Worked with business stakeholders to develop a suite of metrics to track Gifting performance overtime.
+<br>
+- <b>Segmentation Research:</b> Developed and executed comprehensive customer journey research to identify various Gifting segments. This helped the commercial team understand gaps in customer loyalty and develop strategic ways to approach customer segments.
+<br>
+- <b>Auto Delivery Metrics:</b> Developed a Looker Explore dedicated to Auto Delivery metrics. Created various KPIs to track customer utilization, cohort retention, churn, LTV, AOV, etc.
+"""
+
 [[experience]]
   title = "Senior Data Analyst"
   company = "Motivate LLC."
   company_url = "https://www.motivateco.com/"
   location = "New York"
   date_start = "2019-07-01"
-  date_end = ""
+  date_end = "2022-06-01"
   description = """
 - <b>Data Warehousing:</b> Planned and implemented data warehouse architecture after Lyft acquisition. Transitioned data into Lyft's framework while maintaining legacy data.
 <br>
