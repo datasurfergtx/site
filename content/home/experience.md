@@ -20,7 +20,7 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Senior Data Analyst"
-  company = ."nuts.com"
+  company = "nuts.com"
   company_url = "https://www.nuts.com/"
   <!-- location = "New Jersey" -->
   date_start = "2021-06-01"
