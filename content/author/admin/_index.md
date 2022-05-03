@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: Jacky Lam is a self-taught data scientist whose research includes big data analysis on NYC's vast transportation networks and Bike Share operations management.
+bio: Jacky Lam is a self-taught data scientist whose research includes big data analysis on NYC's vast transportation networks, Bike Share operations management and eCommerce.
 education:
   courses:
   - course: Bachelor of Business Administration
@@ -21,8 +21,8 @@ interests:
 
 name: Jacky Lam
 organizations:
-- name: Motivate LLC.
-  url: "https://www.motivateco.com/"
+- name: nuts.com
+  url: "https://www.nuts.com/"
 role: Senior Data Analyst
 social:
 - icon: envelope
