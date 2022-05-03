@@ -22,7 +22,6 @@ date_format = "Jan 2006"
   title = "Senior Data Analyst"
   company = "nuts.com"
   company_url = "https://www.nuts.com/"
-  <!-- location = "New Jersey" -->
   date_start = "2021-06-01"
   date_end = ""
   description = """
