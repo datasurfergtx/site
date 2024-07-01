@@ -23,7 +23,7 @@ name: Jacky Lam
 organizations:
 - name: nuts.com
   url: "https://www.nuts.com/"
-role: Senior Data Analyst
+role: Data Engineer
 social:
 - icon: envelope
   icon_pack: fas
