@@ -4,6 +4,9 @@ authors:
 date: "2018-09-10T00:00:00-04:00"
 lastmod: "2018-09-10T00:00:00-04:00"
 draft: false
+image:
+  focal_point: "Right"
+  preview_only: false
 linktitle: Explorartory Analysis with Uber Data in R
 title: Explorartory Analysis with Uber Data in R
 reading_time: true

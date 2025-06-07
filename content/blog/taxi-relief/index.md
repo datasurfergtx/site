@@ -34,8 +34,6 @@ Through many months of online and in-field research, I created a more refined li
 ## Several Types of Stands
 There are 4 types of stands spread across NYC, and they allow specific privileges to certain types of vehicles.
 
-<b><i>Disclaimer: This information is <u>not</u> considered an official source of information.</i></b>
-
 - <b>Taxi Stand:</b> Taxi drivers can wait in their vehicle and pick up passengers.
 - <b>Taxi Relief Stand:</b> Taxi drivers are allowed to park their vehicles for up to one hour.
 - <b>Taxi/FHV Relief Stand:</b> Taxi and FHV drivers are allowed to park their vehicles for up to one hour.
