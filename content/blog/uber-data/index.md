@@ -6,18 +6,8 @@ lastmod: "2018-09-10T00:00:00-04:00"
 draft: false
 linktitle: Explorartory Analysis with Uber Data in R
 title: Explorartory Analysis with Uber Data in R
-toc: true
-type: docs
 reading_time: true
 ---
-
-In this tutorial we're going to:
-
-1. [Import Data](#import-data)
-2. [Clean Datetime](#clean-datetime)
-3. [Aggregate Data](#aggregate-data)
-4. [Graph](#graph)
-
 
 ## Import Data
 
