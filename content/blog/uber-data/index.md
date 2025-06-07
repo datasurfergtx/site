@@ -2,15 +2,13 @@
 authors:
 - admin
 date: "2018-09-10T00:00:00-04:00"
+lastmod: "2018-09-10T00:00:00-04:00"
 draft: false
 linktitle: Explorartory Analysis with Uber Data in R
-menu:
-  tutorial:
-    parent: R
-    weight: 1
 title: Explorartory Analysis with Uber Data in R
 toc: true
 type: docs
+reading_time: true
 ---
 
 In this tutorial we're going to:

@@ -46,6 +46,3 @@ The map has been featured on [Uber's webpage.](https://www.uber.com/drive/new-yo
 <br>
 ## <b>Recent Posts</b>
 - [Visualizing Veteran Population](https://jackylam.io/blog/veterans/)
-
-## <b>Tutorials:</b>
-- [Explorartory Analysis on Uber Data](https://jackylam.io/tutorial/uber-data/)
