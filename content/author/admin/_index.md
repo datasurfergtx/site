@@ -14,7 +14,7 @@ interests:
 - Data Engineering
 - Data Infrastructure & Architecture
 - Data Analysis & Visualization
-- Cycling!
+- Road Cycling!
 - Photography
 
 name: Jacky Lam
@@ -44,6 +44,12 @@ user_groups:
 - Visitors
 ---
 
-Hi there! I’m Jacky, a data-loving data analyst. My passion for data began in 2016 while working for the NYC Taxi & Limousine Commission. For over three years, I worked on researching and implementing policies that affect the lives of over 8 million New Yorkers with a data-driven approach. I created this site to be the home for my work and personal projects.
+Hi there! I’m Jacky — a data-driven problem solver and Data Engineer with a passion for using data to make meaningful impact.
 
-I studied Business Administration at Queens College and enlisted in the military after finishing my undergraduate degree. I spent three years in the New York Army National Guard as an [Air Battle Management System Operator.] (https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories/combat/air-defense-battle-management-system-operator.html) After completing my military service, I worked as a consultant for the NYC Department of Parks and Recreation, where I oversaw the data collection of a citywide initiative called [Trees Count! 2015.] (http://media.nycgovparks.org/images/web/TreesCount/Index.html) At the time, I was unaware of the possibilities this [dataset offered.] (https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh) Instead, I was focused on creating a strong team and leveraging my leadership experience from the military. Little did I know, this experience served as the precursor for my love in data. Please take a look around and feel free to get in [touch] (mailto:ny.jackylam@gmail.com) with me!
+My journey with data began in 2016 during my time at the NYC Taxi & Limousine Commission. Over the course of three years, I had the privilege of working on policies that directly shaped the lives of more than 8 million New Yorkers. It was there that I first saw how thoughtful, data-informed decisions could influence public policy — and I was hooked.
+
+Before stepping fully into the world of data, I earned a degree in Business Administration from Queens College and enlisted in the New York Army National Guard. For three years, I served as an [Air Battle Management System Operator] (https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories/combat/air-defense-battle-management-system-operator.html), where I developed a foundation in leadership, discipline, and systems thinking — all of which continue to shape how I approach engineering challenges today.
+
+After completing my military service, I took on a consulting role with the NYC Department of Parks and Recreation. There, I managed data collection for Trees Count! 2015, a citywide tree census. At the time, I didn’t fully grasp the potential locked inside that [dataset.] (https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh) My focus was on team-building and applying my leadership skills. But in retrospect, that project was the spark — it opened my eyes to the power of data and set me on the path I’m on today.
+
+This site is a space where I share my work, projects, and ideas — both professional and personal. Thanks for stopping by, and feel free to get in [touch] (mailto:ny.jackylam@gmail.com) with me if you'd like to connect!
