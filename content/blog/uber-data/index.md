@@ -1,12 +1,14 @@
 ---
+authors:
+- admin
 date: "2018-09-10T00:00:00-04:00"
 draft: false
-linktitle: Explorartory Analysis on Uber Data
+linktitle: Explorartory Analysis with Uber Data in R
 menu:
   tutorial:
     parent: R
     weight: 1
-title: Explorartory Analysis on Uber Data
+title: Explorartory Analysis with Uber Data in R
 toc: true
 type: docs
 ---
