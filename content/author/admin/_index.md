@@ -1,22 +1,20 @@
 ---
 authors:
 - admin
-bio: Jacky Lam is a self-taught data scientist whose research includes big data analysis on NYC's vast transportation networks, Bike Share operations management and eCommerce.
+bio: Jacky Lam is a self-taught Data Engineer whose research includes big data analysis on NYC's vast transportation networks, Bike Share operations management and eCommerce.
 education:
   courses:
   - course: Bachelor of Business Administration
     institution: Queens College, City University of New York
-    year: 2014
   - course: Data Scientist with R Track
     institution: DataCamp
-    year: 2017
 
 email: "ny.jackylam@gmail.com"
 interests:
-- Data Science
+- Data Engineering
+- Data Infrastructure & Architecture
 - Data Analysis & Visualization
-- Linear Algebra
-- Statistics
+- Cycling!
 - Photography
 
 name: Jacky Lam
