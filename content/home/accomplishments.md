@@ -2,7 +2,7 @@
 # Accomplishments widget.
 widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
 title = "Certifications"
@@ -44,8 +44,8 @@ date_format = "Jan 2006"
   title = "Shiny Fundamentals with R Track"
   url = ""
   certificate_url = "/files/shiny.pdf"
-  date_start = "2017-10-01"
-  date_end = "2017-10-01"
+  date_start = "2017-06-01"
+  date_end = "2017-06-01"
   description = "Using R to build applications that can be hosted on the internet without using any other web programming languages. This is particularly valuable for displaying dashboards and letting users interact with analyses without needing to program."
 
 +++

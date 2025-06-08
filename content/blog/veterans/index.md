@@ -39,6 +39,3 @@ Visualizing this dataset helped us understand that areas with the highest propor
 
 ## <b>Recent Posts</b>
 - [Creating a Practical Tool for Taxi/Uber Driver](https://jackylam.io/blog/taxi-relief/)
-
-## <b>Tutorials:</b>
-- [Explorartory Analysis on Uber Data](https://jackylam.io/tutorial/uber-data/)
