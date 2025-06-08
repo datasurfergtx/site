@@ -20,16 +20,25 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Data Engineer"
-  company = "nuts.com"
+  company = "Nuts.com"
   company_url = "https://www.nuts.com/"
   date_start = "2021-06-01"
   date_end = ""
   description = """
-- <b>Product Category Development:</b> Created a universal definition for Gifting. Worked with business stakeholders to develop a suite of metrics to track Gifting performance overtime.
+- <b>ETL Pipeline Refactor & Cost Optimization:</b> Refactored and optimized the core ETL data pipeline ingesting all website sales data—rewrote transformations and re-architected batch jobs to reduce infrastructure costs by 63% and cut job run times by 50%.
 <br>
-- <b>Segmentation Research:</b> Developed and executed comprehensive customer journey research to identify various Gifting segments. This helped the commercial team understand gaps in customer loyalty and develop strategic ways to approach customer segments.
+- <b>Product Cost Metrics:</b> Drove a company-wide initiative to unlock visibility into product cost metrics by leading cross-functional collaboration between Finance, BI, and DevOps. Spearheaded project scoping, requirements gathering, and the end-to-end development of scalable data pipelines in Databricks and reporting infrastructure in Looker—enabling more accurate, actionable financial insights.
 <br>
-- <b>Auto Delivery Metrics:</b> Developed a Looker Explore dedicated to Auto Delivery metrics. Created various KPIs to track customer utilization, cohort retention, churn, LTV, AOV, etc.
+- <b>Databricks CI/CD Implementation & Job Reorganization:</b> Architected and implemented CI/CD pipelines for Databricks by migrating notebooks and scripts into Git-based version control and reorganizing jobs by functional domain—standardizing deployments.
+<br>
+- <b>Data Modeling & dbt ELT Pipeline Architecture</b> Architected and modeled raw sales data into efficient fact and dimension tables using dbt—optimizing schema design to reduce query times, unlock deeper visibility for business users, and accelerate data-driven insights.
+<br>
+- <b>Looker Style Guide Development & Standardization</b> Partnered with BI and analytics stakeholders to develop and roll out a comprehensive Looker style guide—standardizing terminology, view structures, and design patterns to boost collaboration, reduce onboarding time, and ensure high-quality, consistent dashboards across the organization.
+<br>
+- <b>Stabilized BI Infrastructure with Blue/Green Deployment</b> Engineered and deployed a Blue/Green data deployment strategy to stabilize BI infrastructure, reducing query latency errors by over 80% and significantly improving dashboard reliability and user trust.
+- <b>Launched Foundational Analytics for New Digital Gifting Product</b> Partnered with Product, Gifting, and Engineering teams to architect and implement the foundational reporting infrastructure for “Gift Drop”, a new product category—delivering end-to-end visibility into adoption, performance, and growth.
+- <b>Established Scalable Metrics Framework for New Product Category</b> Defined a unified, company-wide framework for the Gifting product category and collaborated with stakeholders to develop a comprehensive suite of performance metrics—establishing a consistent foundation for strategic analysis and long-term growth tracking.
+- <b>Uncovered Key Customer Segments Through Journey Analytics</b> Designed and executed customer journey analytics to identify key gifting segments, leveraging behavioral and transactional data. Enabled the commercial team to uncover loyalty gaps and develop data-driven strategies for targeted customer engagement and retention.
 """
 
 [[experience]]
@@ -38,15 +47,15 @@ date_format = "Jan 2006"
   company_url = "https://www.motivateco.com/"
   location = "New York"
   date_start = "2019-07-01"
-  date_end = "2022-06-01"
+  date_end = "2021-06-01"
   description = """
-- <b>Data Warehousing:</b> Planned and implemented data warehouse architecture after Lyft acquisition. Transitioned data into Lyft's framework while maintaining legacy data.
+- <b>Modernize Data Warehouse Architecture:</b> Architected and implemented a scalable data warehouse solution post-Lyft acquisition, aligning legacy data systems with Lyft's modern data infrastructure and ensuring seamless migration and integration.
 <br>
-- <b>BI Tools:</b> Lead company BI Tool transition from Domo to Tableau. Transitioned and created more robust dashboards, reducing redundancy by consolidating multiple dashboards. Created and managed an internal slack channel to encourage open communication with field leaders.
+- <b>Led Company-Wide BI Migration to Tableau:</b> Led enterprise-wide BI tool migration from Domo to Tableau, designing and deploying optimized, consolidated dashboards that reduced redundancy and enhanced reporting accuracy. Established and managed a dedicated internal Slack channel to promote collaboration and rapid feedback with field leadership.
 <br>
-- <b>Operations:</b> Worked with Field Teams across 8 cities in North America to track KPIs, City Program Agreements, Service Agreements, created Operational Dashboards, and advised senior leadership in driving business decisions with a data driven approach.
+- <b>Enabled Near Real-Time Field Operations with GIS Dashboards:</b>Developed geospatial heat map visualizations to support E-Bike Battery Swapping operations, providing operational leaders with real-time insights into field activity and improving logistical decision-making.
 <br>
-- <b>Management:</b> Managed a Data Engineer and a Data Analyst. Lead morning scrum meetings with the team to ensure projects are meeting deadlines.
+- <b>Managed a Cross-Functional Data Team:</b> Managed and mentored a cross-functional data team of one Data Engineer and one Data Analyst. Facilitated daily stand-ups and sprint planning to ensure timely project delivery and alignment with organizational goals.
 """
 
 [[experience]]
@@ -57,13 +66,12 @@ date_format = "Jan 2006"
   date_start = "2016-03-01"
   date_end = "2019-07-01"
   description = """
-- <b>Predictive Modeling:</b> Created a linear model that predicted fares in Taxi, Uber, Lyft, Via, & Juno. The model compared app company rates against taxi rates to support landmark income policy for for-hire drivers.
+- <b>Forecasted Ride Fare Dynamics Across Rideshare Providers and Taxis:</b> Developed a multivariate linear regression model to forecast ride fares across Taxi, Uber, Lyft, Via, and Juno. Conducted comparative rate analysis to support a landmark for-hire driver income policy, influencing regulatory decisions.
 <br>
-- <b>Geographic Information System (GIS):</b> Overhauled the Department of Transportation's listing of Taxi/For-Hire Vehicle Relief stands (parking spaces) by creating a driver-friendly map. The map has received over 1.5 million views since October 2018.
+- <b>Launched High-Impact GIS Tool Viewed Over 2.3M Times:</b> Redesigned and digitized the Department of Transportation's For-Hire Vehicle Relief Stand database using GIS tools, producing an interactive, driver-friendly map viewed over 2.3 million times since launch—dramatically improving public accessibility.
 <br>
-- <b>Data Wrangling & Compliance:</b> Experienced with creating regulatory data specifications, working with vendors on compliance, and collaborating with IT to load data into production.
-<br>
-- <b>Innovative:</b> Procured educational data science software (DataCamp) for Agency-wide use. 26 employees got to learn R & Python. Prior to procurement, employees used Microsoft Access and Excel for data analysis."""
+- <b>Defined Regulatory Data Standards and Vendor Compliance:</b> Authored regulatory data specifications and led vendor compliance efforts. Partnered with IT to implement data ingestion pipelines, ensuring accurate and timely loading of for-hire vehicle datasets into production systems.
+"""
 
 [[experience]]
   title = "Street Tree Census Assistant Coordinator"
@@ -73,11 +81,10 @@ date_format = "Jan 2006"
   date_start = "2015-03-01"
   date_end = "2016-03-01"
   description = """
-- <b>Supervisor:</b> Supervised a staff of 25 to train volunteers on data collection of over 660,000 street trees in NYC.
-- <b>Asset Management:</b> Lead administrator of asset management software (Histree) provided by Nektar Inc. Histree
-stored volunteer information, company assets, and recorded the movement of assets.
-- <b>Public Relations:</b> Agency liaison for sponsorship with BMW. BMW provided 20 brand new BMW i3s to
-facilitate data collection for the first six months of the census."""
+- <b>Team Leadership:</b> Supervised a team of 25 staff members and trained volunteers in the data collection of over 660,000 street trees as part of NYC’s TreesCount! census initiative.
+- <b>Asset Management:</b> Served as the lead administrator for Histree, an asset management system by Nektar Inc., used to manage volunteer data, company assets, and asset logistics.
+- <b>Stakeholder Engagement:</b> Acted as the primary agency liaison for a public-private partnership with BMW, which donated 20 new BMW i3 vehicles to support data collection efforts during the first six months of the project.
+"""
 
 [[experience]]
   title = "Operations Manager"
@@ -87,9 +94,10 @@ facilitate data collection for the first six months of the census."""
   date_start = "2014-08-01"
   date_end = "2015-03-01"
   description = """
-- <b>Supervisor:</b> Oversaw the operations of a small company with 7 employees and worked directly under the CEO.
-- <b>Business-to-Business (B2B):</b> Managed the business accounts of seven high-end retail boutiques.
-- <b>Operational Streamlining:</b> Increased office efficiency by introducing new workflows and usage of cloud software.
+- <b>Operations Oversight:</b> Managed day-to-day operations for a small logistics firm with 7 employees; reported directly to the CEO and supported strategic business functions.
+- <b>Client Account Management:</b> Maintained and grew relationships with seven high-end retail clients, ensuring timely and reliable service delivery.
+- <b>Process Improvement:</b> Implemented new workflows and introduced cloud-based tools to enhance office efficiency and improve internal coordination.
+"""
   """
 
 [[experience]]
