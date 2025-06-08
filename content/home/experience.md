@@ -98,7 +98,6 @@ date_format = "Jan 2006"
 - <b>Client Account Management:</b> Maintained and grew relationships with seven high-end retail clients, ensuring timely and reliable service delivery.
 - <b>Process Improvement:</b> Implemented new workflows and introduced cloud-based tools to enhance office efficiency and improve internal coordination.
 """
-  """
 
 [[experience]]
   title = "Air Battle Management System Operator"
